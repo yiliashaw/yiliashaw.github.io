@@ -87,7 +87,7 @@ footer {
     background: #fff;
 }
 
-#mylogo {
+/*#mylogo {
     font-size:50px;
     font-weight:800;
     font-family: 'ClickerScript','Helvetica', 'Arial', 'Sans-Serif';
@@ -98,7 +98,7 @@ footer {
 
 #mylogo:hover {
     color:#222;
-}
+}*/
 
 .cover {
     position: relative;

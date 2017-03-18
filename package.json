@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/yiliashaw/yiliashaw.github.io#readme",
   "devDependencies": {
+    "bower": "^1.8.0",
     "glob": "^7.1.1",
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.1.0",

@@ -43,6 +43,7 @@ a {
 }
 a:focus,a:hover {
     text-decoration: none;
+    color:#222;
 }
 
 p {

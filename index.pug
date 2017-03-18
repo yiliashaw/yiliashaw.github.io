@@ -1,14 +1,18 @@
 extends ./layouts/default
-
+block scripts
+	script(src="/public/libs/jquery/dist/jquery.min.js")
+	script(src="/public/libs/bootstrap/dist/js/bootstrap.min.js")
+	link(href="/public/libs/bootstrap/dist/css/bootstrap.min.css", rel="stylesheet")
+	link(href="/css/main.css", rel="stylesheet")
 
 block content
 	nav
-		a(href='/archive/post-list.html')#mylogo Yilia
+		//- a(href='/archive/post-list.html')#mylogo Yilia
 			
 
 	.cover
-		
-		img(src='/css/imgs/tree-sm.jpg' alt='HomePage').img-responsive
+		a(href='/archive/post-list.html')
+			img(src='/css/imgs/tree-sm.jpg' alt='HomePage').img-responsive
 		.codeWrapper
 			span.code
 		

@@ -1,19 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>Yilia</title><link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"><script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script><script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script><script>const loc = window.location.pathname.split('/')[1];
-const pathPre = (function(loc){
-	if(!loc || loc =='index.html'||loc == 'about.html'){
-		return '/';
-	}else if(loc == 'archive'){
-		return '../'
-	} else if(loc == 'posts'){
-	return '../../'
-	}
-})(loc);
-function addCss(pathPre){
-	const link ='<link href="'+pathPre+'css/main.css", rel="stylesheet">';
-	$('head').append(link);
-}
-addCss(pathPre);
-</script></head><body><div class="wrapper"><nav><ul class="content"><li><a href="#" onclick="location.href = location.origin  + '/index.html';return false;">Home</a></li><li class="active"><a href="#" onclick="location.href = location.origin  + '/archive/post-list.html';return false;">Archive</a></li><li><a href="#" onclick="location.href = location.origin  + '/about.html';return false;">About</a></li></ul></nav><div class="main post"><h2>遇见</h2>
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Yilia</title><script src="../../public/libs/jquery/dist/jquery.min.js"></script><script src="../../public/libs/bootstrap/dist/js/bootstrap.min.js"></script><link href="../../public/libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"><link href="../../css/main.css" rel="stylesheet"></head><body><div class="wrapper"><nav><ul class="content"><li><a href="#" onclick="location.href = location.origin  + '/index.html';return false;">Home</a></li><li class="active"><a href="#" onclick="location.href = location.origin  + '/archive/post-list.html';return false;">Archive</a></li><li><a href="#" onclick="location.href = location.origin  + '/about.html';return false;">About</a></li></ul></nav><div class="main post"><h2>遇见</h2>
 <p>听见 冬天 的离开</p>
 <p>我在某年某月 醒过来</p>
 <p>我想 我等 我期待</p>

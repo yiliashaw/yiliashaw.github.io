@@ -1,0 +1,8 @@
+extends ../../layouts/default
+
+
+block content
+	include ../../layouts/nav
+	.main.post
+		include:md README.md
+	script(src = '../../js/post.js')

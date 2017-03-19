@@ -4,13 +4,9 @@
     const pug = require('gulp-pug');
     const watch = require('gulp-watch');
     const exec = require('child_process').exec
-    const base = __dirname;
-
     const fs = require('fs');
-
-    
-
     const md = require('jstransformer')(require('jstransformer-markdown-it'));
+    const base = __dirname;
 
     const options = {
         filters: {
@@ -19,12 +15,9 @@
             }
         }
     };
-    // const pugFiles = '*.pug';
-
-   
 
     const taskPug = () => {
-        gulp.src(['*.pug','archive/*.pug','posts/*/*.pug'])
+        gulp.src(['*.pug', 'archive/*.pug'])
             .pipe(pug(options))
             .pipe(gulp.dest(file => file.base));
     }
@@ -32,7 +25,7 @@
     gulp.task('pug', taskPug);
 
     gulp.task('watch', ['pug'], (cb) => {
-        watch(['*.pug', 'archive/*.pug', 'posts/*/*.pug', '*.md', 'posts/*/*.md', 'css/*.css'], {
+        watch(['*.pug', '*/*.pug', '*.md', 'posts/*.md', 'css/*.css'], {
             cwd: './',
             verbose: true
         }, taskPug);
@@ -47,18 +40,20 @@
                 port: 1874,
                 livereload: true,
                 directoryListing: false,
-                open: true,
+                // open: true,
                 fallback: 'index.html'
             }));
     });
 
 
     gulp.task('task', function(cb) {
-        exec('node js/genData.js', function(err, stdout, stderr) {
+        exec('node genData.js', function(err, stdout, stderr) {
             console.log(stdout);
             console.log(stderr);
             cb(err);
         });
     });
+
     gulp.task('default', ['task', 'watch', 'webserver']);
+
 })();

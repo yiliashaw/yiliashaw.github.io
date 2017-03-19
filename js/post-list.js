@@ -26,7 +26,7 @@ const renderList = function(objArr) {
     const nav = document.querySelector('.nav');
     let listEl = '';
     for (let i = 0; i < objArr.length; i++) {
-        const liEl = '<li><a class="row" href="../' + objArr[i].url + '"> <span class="col-sm-9">' + objArr[i].name + '</span><span class="col-sm-3 update-data">' + objArr[i].modTime.split(' ')[0] + '</span></a></li>';
+        const liEl = '<li><a class="row" href="' + objArr[i].url + '"> <span class="col-sm-9 col-xs-9">' + objArr[i].title + '</span><span class="col-sm-3 col-xs-3 update-data">' + objArr[i].modTime.split(' ')[0] + '</span></a></li>';
         listEl += liEl;
     }
     nav.innerHTML = listEl;

@@ -67,16 +67,16 @@
     <link href="http://yoursite.com/2017-a/04/15/iii/"/>
     <id>http://yoursite.com/2017-a/04/15/iii/</id>
     <published>2017-04-15T02:18:26.000Z</published>
-    <updated>2017-04-18T11:56:33.986Z</updated>
+    <updated>2017-04-18T14:19:02.955Z</updated>
     
     <content type="html"><![CDATA[<p>以下展示了自1500世纪以来使用的标准Lorem Ipsum段落，西塞罗笔下“de Finibus Bonorum et Malorum”章节1.10.32 ， 1.10.33的原著作，以及其1914年译自H. Rackham的英文版本。</p>
-<p>我能从哪里获取？<br>如今互联网提供各种各样版本的Lorem Ipsum段落，但是大多数都多多少少出于刻意幽默或者其他随机插入的荒谬单词而被篡改过了。如果你想取用一段Lorem Ipsum，请确保段落中不含有令人尴尬的不恰当内容。所有网上的Lorem Ipsum生成器都倾向于在必要时重复预先准备的部分，然而这个生成器则是互联网上首个确切的生成器。它使用由超过200个拉丁单词所构造的词典，结合了几个模范句子结构，来生成看起来恰当的Lorem Ipsum。因此，生成出的结果无一例外免于重复，刻意的幽默，以及非典型的词汇等等。</p>
-]]></content>
+<h6 id="我能从哪里获取？"><a href="#我能从哪里获取？" class="headerlink" title="我能从哪里获取？"></a>我能从哪里获取？</h6><p>如今互联网提供各种各样版本的Lorem Ipsum段落，但是大多数都多多少少出于刻意幽默或者其他随机插入的荒谬单词而被篡改过了。如果你想取用一段Lorem Ipsum，请确保段落中不含有令人尴尬的不恰当内容。所有网上的Lorem Ipsum生成器都倾向于在必要时重复预先准备的部分，然而这个生成器则是互联网上首个确切的生成器。它使用由超过200个拉丁单词所构造的词典，结合了几个模范句子结构，来生成看起来恰当的Lorem Ipsum。因此，生成出的结果无一例外免于重复，刻意的幽默，以及非典型的词汇等等。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">const name = <span class="string">'Tom'</span>;const name = <span class="string">'Tom'</span>;const name = <span class="string">'Tom'</span>;const name = <span class="string">'Tom'</span>;const name = <span class="string">'Tom'</span>;const name = <span class="string">'Tom'</span>;const name = <span class="string">'Tom'</span>;</div><div class="line"></div><div class="line">const sayName = <span class="keyword">function</span>(name)&#123;</div><div class="line">  console.log(name);</div><div class="line">&#125;;</div><div class="line"></div><div class="line">sayName();</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;以下展示了自1500世纪以来使用的标准Lorem Ipsum段落，西塞罗笔下“de Finibus Bonorum et Malorum”章节1.10.32 ， 1.10.33的原著作，以及其1914年译自H. Rackham的英文版本。&lt;/p&gt;
-&lt;p&gt;我能从哪里获取？&lt;b
+&lt;h6 id=&quot;我能从哪里
     
     </summary>
     

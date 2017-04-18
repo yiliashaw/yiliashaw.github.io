@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Shaw</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-04-18T11:57:10.233Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Yilia Shaw</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>什么是Lorem Ipsum?</title>
+    <link href="http://yoursite.com/2017-a/04/15/kkk/"/>
+    <id>http://yoursite.com/2017-a/04/15/kkk/</id>
+    <published>2017-04-15T02:18:42.000Z</published>
+    <updated>2017-04-18T11:57:10.233Z</updated>
+    
+    <content type="html"><![CDATA[<p>Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。<br><a id="more"></a></p>
+<p>我们为何用它？<br>无可否认，当读者在浏览一个页面的排版时，难免会被可阅读的内容所分散注意力。Lorem Ipsum的目的就是为了保持字母多多少少标准及平均的分配，而不是“此处有文本，此处有文本”，从而让内容更像可读的英语。如今，很多桌面排版软件以及网页编辑用Lorem Ipsum作为默认的示范文本，搜一搜“Lorem Ipsum”就能找到这些网站的雏形。这些年来Lorem Ipsum演变出了各式各样的版本，有些出于偶然，有些则是故意的（刻意的幽默之类的）。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Lorem" scheme="http://yoursite.com/tags/Lorem/"/>
+    
+      <category term="乱数假文" scheme="http://yoursite.com/tags/%E4%B9%B1%E6%95%B0%E5%81%87%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>它起源于哪里？</title>
+    <link href="http://yoursite.com/2017-a/04/15/jjjj/"/>
+    <id>http://yoursite.com/2017-a/04/15/jjjj/</id>
+    <published>2017-04-15T02:18:37.000Z</published>
+    <updated>2017-04-18T11:56:08.139Z</updated>
+    
+    <content type="html"><![CDATA[<p>它起源于哪里？<br>恰恰与流行观念相反，Lorem Ipsum并不是简简单单的随机文本。它追溯于一篇公元前45年的经典拉丁著作，从而使它有着两千多年的岁数。弗吉尼亚州Hampden-Sydney大学拉丁系教授Richard McClintock曾在Lorem Ipsum段落中注意到一个涵义十分隐晦的拉丁词语，“consectetur”，通过这个单词详细查阅跟其有关的经典文学著作原文，McClintock教授发掘了这个不容置疑的出处。Lorem Ipsum始于西塞罗(Cicero)在公元前45年作的“de Finibus Bonorum et Malorum”（善恶之尽）里1.10.32 和1.10.33章节。这本书是一本关于道德理论的论述，曾在文艺复兴时期非常流行。Lorem Ipsum的第一行”Lorem ipsum dolor sit amet..”节选于1.10.32章节。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;它起源于哪里？&lt;br&gt;恰恰与流行观念相反，Lorem Ipsum并不是简简单单的随机文本。它追溯于一篇公元前45年的经典拉丁著作，从而使它有着两千多年的岁数。弗吉尼亚州Hampden-Sydney大学拉丁系教授Richard McClintock曾在Lorem Ipsum段
+    
+    </summary>
+    
+    
+      <category term="cnbeta" scheme="http://yoursite.com/tags/cnbeta/"/>
+    
+      <category term="android" scheme="http://yoursite.com/tags/android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lorem Ipsum段落</title>
+    <link href="http://yoursite.com/2017-a/04/15/iii/"/>
+    <id>http://yoursite.com/2017-a/04/15/iii/</id>
+    <published>2017-04-15T02:18:26.000Z</published>
+    <updated>2017-04-18T11:56:33.986Z</updated>
+    
+    <content type="html"><![CDATA[<p>以下展示了自1500世纪以来使用的标准Lorem Ipsum段落，西塞罗笔下“de Finibus Bonorum et Malorum”章节1.10.32 ， 1.10.33的原著作，以及其1914年译自H. Rackham的英文版本。</p>
+<p>我能从哪里获取？<br>如今互联网提供各种各样版本的Lorem Ipsum段落，但是大多数都多多少少出于刻意幽默或者其他随机插入的荒谬单词而被篡改过了。如果你想取用一段Lorem Ipsum，请确保段落中不含有令人尴尬的不恰当内容。所有网上的Lorem Ipsum生成器都倾向于在必要时重复预先准备的部分，然而这个生成器则是互联网上首个确切的生成器。它使用由超过200个拉丁单词所构造的词典，结合了几个模范句子结构，来生成看起来恰当的Lorem Ipsum。因此，生成出的结果无一例外免于重复，刻意的幽默，以及非典型的词汇等等。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以下展示了自1500世纪以来使用的标准Lorem Ipsum段落，西塞罗笔下“de Finibus Bonorum et Malorum”章节1.10.32 ， 1.10.33的原著作，以及其1914年译自H. Rackham的英文版本。&lt;/p&gt;
+&lt;p&gt;我能从哪里获取？&lt;b
+    
+    </summary>
+    
+    
+      <category term="cnbeta" scheme="http://yoursite.com/tags/cnbeta/"/>
+    
+      <category term="microsoft" scheme="http://yoursite.com/tags/microsoft/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lorem Ipsum</title>
+    <link href="http://yoursite.com/2017-a/04/15/hhh/"/>
+    <id>http://yoursite.com/2017-a/04/15/hhh/</id>
+    <published>2017-04-15T02:18:17.000Z</published>
+    <updated>2017-04-18T12:02:03.926Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…</p>
+</blockquote>
+<h6 id="什么是Lorem-Ipsum"><a href="#什么是Lorem-Ipsum" class="headerlink" title="什么是Lorem Ipsum?"></a>什么是Lorem Ipsum?</h6><p>Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。</p>
+<h6 id="我们为何用它？"><a href="#我们为何用它？" class="headerlink" title="我们为何用它？"></a>我们为何用它？</h6><p>无可否认，当读者在浏览一个页面的排版时，难免会被可阅读的内容所分散注意力。Lorem Ipsum的目的就是为了保持字母多多少少标准及平均的分配，而不是“此处有文本，此处有文本”，从而让内容更像可读的英语。如今，很多桌面排版软件以及网页编辑用Lorem Ipsum作为默认的示范文本，搜一搜“Lorem Ipsum”就能找到这些网站的雏形。这些年来Lorem Ipsum演变出了各式各样的版本，有些出于偶然，有些则是故意的（刻意的幽默之类的）。<br><a id="more"></a></p>
+<h6 id="它起源于哪里？"><a href="#它起源于哪里？" class="headerlink" title="它起源于哪里？"></a>它起源于哪里？</h6><p>恰恰与流行观念相反，Lorem Ipsum并不是简简单单的随机文本。它追溯于一篇公元前45年的经典拉丁著作，从而使它有着两千多年的岁数。弗吉尼亚州Hampden-Sydney大学拉丁系教授Richard McClintock曾在Lorem Ipsum段落中注意到一个涵义十分隐晦的拉丁词语，“consectetur”，通过这个单词详细查阅跟其有关的经典文学著作原文，McClintock教授发掘了这个不容置疑的出处。Lorem Ipsum始于西塞罗(Cicero)在公元前45年作的“de Finibus Bonorum et Malorum”（善恶之尽）里1.10.32 和1.10.33章节。这本书是一本关于道德理论的论述，曾在文艺复兴时期非常流行。Lorem Ipsum的第一行”Lorem ipsum dolor sit amet..”节选于1.10.32章节。</p>
+<p>以下展示了自1500世纪以来使用的标准Lorem Ipsum段落，西塞罗笔下“de Finibus Bonorum et Malorum”章节1.10.32 ， 1.10.33的原著作，以及其1914年译自H. Rackham的英文版本。</p>
+<h6 id="我能从哪里获取？"><a href="#我能从哪里获取？" class="headerlink" title="我能从哪里获取？"></a>我能从哪里获取？</h6><p>如今互联网提供各种各样版本的Lorem Ipsum段落，但是大多数都多多少少出于刻意幽默或者其他随机插入的荒谬单词而被篡改过了。如果你想取用一段Lorem Ipsum，请确保段落中不含有令人尴尬的不恰当内容。所有网上的Lorem Ipsum生成器都倾向于在必要时重复预先准备的部分，然而这个生成器则是互联网上首个确切的生成器。它使用由超过200个拉丁单词所构造的词典，结合了几个模范句子结构，来生成看起来恰当的Lorem Ipsum。因此，生成出的结果无一例外免于重复，刻意的幽默，以及非典型的词汇等等。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h6 id=&quot;什么是Lorem-Ipsum&quot;&gt;&lt;a href=&quot;#什么是Lorem-Ipsum&quot; class=&quot;headerlink&quot; title=&quot;什么是Lorem Ipsum?&quot;&gt;&lt;/a&gt;什么是Lorem Ipsum?&lt;/h6&gt;&lt;p&gt;Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。&lt;/p&gt;
+&lt;h6 id=&quot;我们为何用它？&quot;&gt;&lt;a href=&quot;#我们为何用它？&quot; class=&quot;headerlink&quot; title=&quot;我们为何用它？&quot;&gt;&lt;/a&gt;我们为何用它？&lt;/h6&gt;&lt;p&gt;无可否认，当读者在浏览一个页面的排版时，难免会被可阅读的内容所分散注意力。Lorem Ipsum的目的就是为了保持字母多多少少标准及平均的分配，而不是“此处有文本，此处有文本”，从而让内容更像可读的英语。如今，很多桌面排版软件以及网页编辑用Lorem Ipsum作为默认的示范文本，搜一搜“Lorem Ipsum”就能找到这些网站的雏形。这些年来Lorem Ipsum演变出了各式各样的版本，有些出于偶然，有些则是故意的（刻意的幽默之类的）。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="cnbeta" scheme="http://yoursite.com/tags/cnbeta/"/>
+    
+      <category term="microsoft" scheme="http://yoursite.com/tags/microsoft/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>repulsive dashwoods</title>
+    <link href="http://yoursite.com/2017-a/04/15/ggg/"/>
+    <id>http://yoursite.com/2017-a/04/15/ggg/</id>
+    <published>2017-04-15T02:18:03.000Z</published>
+    <updated>2017-04-15T16:44:48.202Z</updated>
+    
+    <content type="html"><![CDATA[<p>Had repulsive dashwoods suspicion sincerity but advantage now him. Remark easily garret nor nay. Civil those mrs enjoy shy fat merry. You greatest jointure saw horrible. He private he on be imagine suppose. Fertile beloved evident through no service elderly is. Blind there if every no so at. Own neglected you preferred way sincerity delivered his attempted. To of message cottage windows do besides against uncivil.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Had repulsive dashwoods suspicion sincerity but advantage now him. Remark easily garret nor nay. Civil those mrs enjoy shy fat merry. You
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>colonel hearted ferrars</title>
+    <link href="http://yoursite.com/2017-a/04/15/fff/"/>
+    <id>http://yoursite.com/2017-a/04/15/fff/</id>
+    <published>2017-04-15T02:17:59.000Z</published>
+    <updated>2017-04-15T16:45:02.352Z</updated>
+    
+    <content type="html"><![CDATA[<p>So by colonel hearted ferrars. Draw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry no he several excited am. Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;So by colonel hearted ferrars. Draw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry n
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>unsatiable</title>
+    <link href="http://yoursite.com/2017-a/04/15/eee/"/>
+    <id>http://yoursite.com/2017-a/04/15/eee/</id>
+    <published>2017-04-15T02:17:54.000Z</published>
+    <updated>2017-04-16T08:10:11.036Z</updated>
+    
+    <content type="html"><![CDATA[<p>Old unsatiable our now but considered travelling impression. In excuse hardly summer in basket misery. By rent an part need. At wrong of of water those linen. Needed oppose seemed how all. Very mrs shed shew gave you. Oh shutters do removing reserved wandered an. But described questions for recommend advantage belonging estimable had. Pianoforte reasonable as so am inhabiting. Chatty design remark and his abroad figure but its.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Old unsatiable our now but considered travelling impression. In excuse hardly summer in basket misery. By rent an part need. At wrong of 
+    
+    </summary>
+    
+    
+      <category term="hello" scheme="http://yoursite.com/tags/hello/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>This is ddd</title>
+    <link href="http://yoursite.com/2017-a/04/15/ddd/"/>
+    <id>http://yoursite.com/2017-a/04/15/ddd/</id>
+    <published>2017-04-15T02:17:46.000Z</published>
+    <updated>2017-04-15T16:46:57.682Z</updated>
+    
+    <content type="html"><![CDATA[<p>this is ddd, and nothing at all.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;this is ddd, and nothing at all.&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Imagine was you removal raising gravity</title>
+    <link href="http://yoursite.com/2017-a/04/15/ccc/"/>
+    <id>http://yoursite.com/2017-a/04/15/ccc/</id>
+    <published>2017-04-15T02:17:37.000Z</published>
+    <updated>2017-04-15T16:47:44.346Z</updated>
+    
+    <content type="html"><![CDATA[<p>Imagine was you removal raising gravity. Unsatiable understood or expression dissimilar so sufficient. Its party every heard and event gay. Advice he indeed things adieus in number so uneasy. To many four fact in he fail. My hung it quit next do of. It fifteen charmed by private savings it mr. Favourable cultivated alteration entreaties yet met sympathize. Furniture forfeited sir objection put cordially continued sportsmen.</p>
+<p>Dispatched entreaties boisterous say why stimulated. Certain forbade picture now prevent carried she get see sitting. Up twenty limits as months. Inhabit so perhaps of in to certain. Sex excuse chatty was seemed warmth. Nay add far few immediate sweetness earnestly dejection.</p>
+<p>Why end might ask civil again spoil. She dinner she our horses depend. Remember at children by reserved to vicinity. In affronting unreserved delightful simplicity ye. Law own advantage furniture continual sweetness bed agreeable perpetual. Oh song well four only head busy it. Afford son she had lively living. Tastes lovers myself too formal season our valley boy. Lived it their their walls might to by young.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Imagine was you removal raising gravity. Unsatiable understood or expression dissimilar so sufficient. Its party every heard and event ga
+    
+    </summary>
+    
+    
+      <category term="random" scheme="http://yoursite.com/tags/random/"/>
+    
+      <category term="gravity" scheme="http://yoursite.com/tags/gravity/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Breakfast procuring</title>
+    <link href="http://yoursite.com/2017-a/04/15/bbb/"/>
+    <id>http://yoursite.com/2017-a/04/15/bbb/</id>
+    <published>2017-04-15T02:17:27.000Z</published>
+    <updated>2017-04-15T16:43:27.381Z</updated>
+    
+    <content type="html"><![CDATA[<p>Breakfast procuring nay end happiness allowance assurance frankness. Met simplicity nor difficulty unreserved who. Entreaties mr conviction dissimilar me astonished estimating cultivated. On no applauded exquisite my additions. Pronounce add boy estimable nay suspected. You sudden nay elinor thirty esteem temper. Quiet leave shy you gay off asked large style.</p>
+<p>Not him old music think his found enjoy merry. Listening acuteness dependent at or an. Apartments thoroughly unsatiable terminated sex how themselves. She are ten hours wrong walls stand early. Domestic perceive on an ladyship extended received do. Why jennings our whatever his learning gay perceive. Is against no he without subject. Bed connection unreserved preference partiality not unaffected. Years merit trees so think in hoped we as.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Breakfast procuring nay end happiness allowance assurance frankness. Met simplicity nor difficulty unreserved who. Entreaties mr convicti
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Shewing</title>
+    <link href="http://yoursite.com/2017-a/04/15/aaa/"/>
+    <id>http://yoursite.com/2017-a/04/15/aaa/</id>
+    <published>2017-04-15T02:14:25.000Z</published>
+    <updated>2017-04-16T08:33:18.446Z</updated>
+    
+    <content type="html"><![CDATA[<p>Shewing met parties gravity husband sex pleased. On to no kind do next feel held walk. Last own loud and knew give gay four. Sentiments motionless or principles preference excellence am. Literature surrounded insensible at indulgence or to admiration remarkably. Matter future lovers desire marked boy use. Chamber reached do he nothing be.</p>
+<p>It as announcing it me stimulated frequently continuing. Least their she you now above going stand forth. He pretty future afraid should genius spirit on. Set property addition building put likewise get. Of will at sell well at as. Too want but tall nay like old. Removing yourself be in answered he. Consider occasion get improved him she eat. Letter by lively oh denote an.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Shewing met parties gravity husband sex pleased. On to no kind do next feel held walk. Last own loud and knew give gay four. Sentiments m
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>遇见</title>
+    <link href="http://yoursite.com/2017-a/04/11/a-song/"/>
+    <id>http://yoursite.com/2017-a/04/11/a-song/</id>
+    <published>2017-04-11T10:05:32.000Z</published>
+    <updated>2017-04-18T11:54:44.641Z</updated>
+    
+    <content type="html"><![CDATA[<p>听见 冬天 的离开</p>
+<p>我在某年某月 醒过来</p>
+<p>我想 我等 我期待</p>
+<p>未来却不能因此安排</p>
+<p>阴天 傍晚 车窗外</p>
+<a id="more"></a>
+<p>未来有一个人在等待</p>
+<p>向左 向右 向前看</p>
+<p>爱要拐几个弯才来</p>
+<p>我遇见谁 会有怎样的对白</p>
+<p>我等的人 他在多远的未来</p>
+<p>我听见风 来自地铁和人海</p>
+<p>我排着队 拿着爱的号码牌</p>
+<blockquote>
+<p>Let life be like summer flowers ,and death be like autumn leaves.</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;听见 冬天 的离开&lt;/p&gt;
+&lt;p&gt;我在某年某月 醒过来&lt;/p&gt;
+&lt;p&gt;我想 我等 我期待&lt;/p&gt;
+&lt;p&gt;未来却不能因此安排&lt;/p&gt;
+&lt;p&gt;阴天 傍晚 车窗外&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://yoursite.com/categories/Diary/"/>
+    
+    
+      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+    
+      <category term="song" scheme="http://yoursite.com/tags/song/"/>
+    
+      <category term="孙燕姿" scheme="http://yoursite.com/tags/%E5%AD%99%E7%87%95%E5%A7%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017-a/03/19/hello-world/"/>
+    <id>http://yoursite.com/2017-a/03/19/hello-world/</id>
+    <published>2017-03-19T14:32:48.570Z</published>
+    <updated>2017-04-14T11:18:25.872Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo server&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+    
+      <category term="hello world" scheme="http://yoursite.com/tags/hello-world/"/>
+    
+  </entry>
+  
+</feed>

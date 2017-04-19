@@ -111,7 +111,10 @@ a {
   color: #424243;
 }
 
-a:hover {
+a:hover,
+a:link,
+a:visited,
+a:active {
   text-decoration: none;
   color: #000;
 }
@@ -121,6 +124,14 @@ img {
   border: 0;
   padding: 0;
   height: auto;
+}
+
+cite {
+  font-style: italic;
+}
+
+acronym {
+  border-bottom: 1px dotted #333;
 }
 
 pre {
@@ -133,6 +144,98 @@ pre,
 samp {
   font-family: monospace, monospace;
   font-size: 14px;
+}
+
+code {
+  padding: 2px 4px;
+  word-wrap: break-word;
+  color: #4d4d4c;
+  background: #f7f7f7;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+pre code {
+  padding: 0;
+  color: #4d4d4c;
+  background: none;
+  text-shadow: none;
+}
+
+pre .deletion {
+  background: #fdd;
+}
+
+pre .addition {
+  background: #dfd;
+}
+
+pre .meta {
+  color: #8959a8;
+}
+
+pre .comment {
+  color: #8e908c;
+}
+
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #c82829;
+}
+
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant,
+pre .command {
+  color: #f5871f;
+}
+
+pre .ruby .class .title,
+pre .css .rules .attribute,
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata,
+pre .special,
+pre .number,
+pre .formula {
+  color: #718c00;
+}
+
+pre .title,
+pre .css .hexcolor {
+  color: #3e999f;
+}
+
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #4271ae;
+}
+
+pre .keyword,
+pre .javascript .function {
+  color: #8959a8;
 }
 
 
@@ -293,20 +396,11 @@ h1.prince-log a {
   font-weight: 500;
   margin-bottom: 20px;
   margin-top: 20px;
-  /*margin-left: 8px;*/
 }
 
 .post-entry {
   clear: both;
   padding-bottom: 10px;
-}
-
-.post-entry a {
-  font-weight: 600;
-}
-
-.post-entry a:hover {
-  text-decoration: underline;
 }
 
 .post-entry img {
@@ -318,27 +412,26 @@ h1.prince-log a {
   margin-bottom: 20px;
 }
 
-.post-entry a.more-link {
-  font-weight: 700;
-  letter-spacing: 1.25px;
-  padding: 8px 20px;
-  border: 2px solid #424242;
-  font-size: 11px;
+.post-entry a {
+  padding: 0 2px;
+  border-bottom: 1px solid #333;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  text-transform: uppercase;
-  color: #111;
-  font-family: 'Oswald', sans-serif, 'Microsoft YaHei', STHeiti;
 }
 
-.post-entry a.more-link:hover {
-  background-color: #111;
-  border: 1px solid #111;
+.post-entry a:hover {
+  background-color: #444;
+  border: none;
   color: #fff;
   text-decoration: none;
+}
+
+.post-entry a.headerlink {
+  text-decoration: none;
+  padding: 0px;
 }
 
 .post-entry p,
@@ -400,6 +493,7 @@ blockquote {
 
 .post-entry blockquote {
   background-color: #f4f4f4;
+  margin-bottom: 20px;
 }
 
 .post-entry blockquote p {
@@ -409,9 +503,49 @@ blockquote {
   font-family: "Georgia";
   font-size: 15px;
   line-height: 28px;
+  margin: 0px;
   font-style: italic;
 }
 
+.post-entry blockquote footer {
+  padding: 0 18px;
+  text-align: right;
+}
+
+.post-entry blockquote footer cite {
+  font-style: italic;
+}
+
+.post-entry blockquote footer cite::before {
+  content: "—";
+  padding: 0px 0.5em;
+}
+
+.post-entry .pullquote {
+  text-align: left;
+  width: 45%;
+  margin: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.post-entry .pullquote.left {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.post-entry .pullquote.right {
+  margin-right: 8px;
+  margin-left: 16px;
+}
+
+.post-entry dl,
 .post-entry ul,
 .post-entry ol {
   padding-left: 45px;
@@ -419,13 +553,22 @@ blockquote {
 }
 
 .post-entry ul li {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   list-style: square;
 }
 
 .post-entry ol li {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   list-style: decimal;
+}
+
+.post-entry dt {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.post-entry dd {
+  margin-bottom: 8px;
 }
 
 .sticky.post .post-header {
@@ -439,50 +582,73 @@ blockquote {
   border-collapse: collapse;
 }
 
-.post-entry td,
-.post-entry th {
-  padding: 0;
+.post-entry td {
+  padding: 2px;
+  border-bottom: 1px solid #ddd;
 }
+
 ::selection {
   background: #262a30;
   color: #fff;
 }
 
 .post-entry th {
+  padding: 6px 0;
   font-weight: bold;
   font-size: 14px;
-  background: #f5f5f5;
+  border-bottom: 2px solid #ddd;
+  /*background: #f5f5f5;*/
 }
 
-pre,
-.highlight {
+.post-entry .highlight figcaption {
+  font-size: 12px;
+  color: #999;
+  /*line-height: 14px;
+    margin-bottom: 14px;*/
+}
+
+.post-entry .highlight figcaption a {
+  float: right;
+  margin-right: 10px;
+}
+
+.post-entry .highlight {
+  margin-bottom: 20px;
+}
+
+.post-entry pre,
+.post-entry .highlight {
   overflow: auto;
   /*margin: 20px 0;*/
   padding: 0;
   font-size: 13px;
-  color: #4d4d4c;
+  /*color: #4d4d4c;*/
   background: #f7f7f7;
   line-height: 1.6;
 }
+
 .highlight pre {
   border: none;
   margin: 0;
   padding: 10px 0;
 }
+
 .highlight table {
   margin: 0;
   width: auto;
   border: none;
 }
+
 .highlight td {
   border: none;
   padding: 0;
 }
+
 .post-entry pre {
   /*margin: 20px 0;*/
   padding: 0;
   font-size: 13px;
-  color: #4d4d4c;
+  /*color: #4d4d4c;*/
   background: #f7f7f7;
   line-height: 1.6;
   padding-top: 10px;
@@ -523,98 +689,6 @@ pre,
   background-color: #f7f7f7;
 }
 
-code {
-  padding: 2px 4px;
-  word-wrap: break-word;
-  color: #4d4d4c;
-  background: #f7f7f7;
-  border-radius: 3px;
-  font-size: 13px;
-}
-
-pre code {
-  padding: 0;
-  color: #4d4d4c;
-  background: none;
-  text-shadow: none;
-}
-
-pre .deletion {
-  background: #fdd;
-}
-
-pre .addition {
-  background: #dfd;
-}
-
-pre .meta {
-  color: #8959a8;
-}
-
-pre .comment {
-  color: #8e908c;
-}
-
-pre .variable,
-pre .attribute,
-pre .tag,
-pre .regexp,
-pre .ruby .constant,
-pre .xml .tag .title,
-pre .xml .pi,
-pre .xml .doctype,
-pre .html .doctype,
-pre .css .id,
-pre .css .class,
-pre .css .pseudo {
-  color: #c82829;
-}
-
-pre .number,
-pre .preprocessor,
-pre .built_in,
-pre .literal,
-pre .params,
-pre .constant,
-pre .command {
-  color: #f5871f;
-}
-
-pre .ruby .class .title,
-pre .css .rules .attribute,
-pre .string,
-pre .value,
-pre .inheritance,
-pre .header,
-pre .ruby .symbol,
-pre .xml .cdata,
-pre .special,
-pre .number,
-pre .formula {
-  color: #718c00;
-}
-
-pre .title,
-pre .css .hexcolor {
-  color: #3e999f;
-}
-
-pre .function,
-pre .python .decorator,
-pre .python .title,
-pre .ruby .function .title,
-pre .ruby .title .keyword,
-pre .perl .sub,
-pre .javascript .title,
-pre .coffeescript .title {
-  color: #4271ae;
-}
-
-pre .keyword,
-pre .javascript .function {
-  color: #8959a8;
-}
-
 .post-entry input {
   padding: 3px 8px;
   border: 1px solid #ccc;
@@ -631,6 +705,30 @@ pre .javascript .function {
 
 .post-entry input[type="submit"]:hover {
   opacity: 0.8;
+}
+
+.post-entry .video-container {
+  position: relative;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.video-container iframe,
+.article-entry .video-container object,
+.article-entry .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+}
+
+.post-entry iframe {
+  border: none;
+  margin-bottom: 20px;
 }
 
 .post-meta {

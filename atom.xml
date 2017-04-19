@@ -1,139 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Shaw</title>
+  <title>Hexo</title>
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-18T11:57:10.233Z</updated>
+  <updated>2017-04-18T15:40:50.989Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>Yilia Shaw</name>
+    <name>John Doe</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>什么是Lorem Ipsum?</title>
-    <link href="http://yoursite.com/2017-a/04/15/kkk/"/>
-    <id>http://yoursite.com/2017-a/04/15/kkk/</id>
-    <published>2017-04-15T02:18:42.000Z</published>
-    <updated>2017-04-18T11:57:10.233Z</updated>
+    <title>Images</title>
+    <link href="http://yoursite.com/2013/12/26/images/"/>
+    <id>http://yoursite.com/2013/12/26/images/</id>
+    <published>2013-12-26T14:46:49.000Z</published>
+    <updated>2017-04-18T15:40:50.989Z</updated>
     
-    <content type="html"><![CDATA[<p>Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。<br><a id="more"></a></p>
-<p>我们为何用它？<br>无可否认，当读者在浏览一个页面的排版时，难免会被可阅读的内容所分散注意力。Lorem Ipsum的目的就是为了保持字母多多少少标准及平均的分配，而不是“此处有文本，此处有文本”，从而让内容更像可读的英语。如今，很多桌面排版软件以及网页编辑用Lorem Ipsum作为默认的示范文本，搜一搜“Lorem Ipsum”就能找到这些网站的雏形。这些年来Lorem Ipsum演变出了各式各样的版本，有些出于偶然，有些则是故意的（刻意的幽默之类的）。</p>
+    <content type="html"><![CDATA[<p>This is a image test post.</p>
+<p><img src="/assets/wallpaper-2572384.jpg" alt=""></p>
+<p><img src="/assets/wallpaper-2311325.jpg" alt="Caption"></p>
+<p><img src="/assets/wallpaper-878514.jpg" alt=""></p>
+<p><img src="http://placehold.it/350x150.jpg" alt="Small Picture"></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Lorem" scheme="http://yoursite.com/tags/Lorem/"/>
-    
-      <category term="乱数假文" scheme="http://yoursite.com/tags/%E4%B9%B1%E6%95%B0%E5%81%87%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>它起源于哪里？</title>
-    <link href="http://yoursite.com/2017-a/04/15/jjjj/"/>
-    <id>http://yoursite.com/2017-a/04/15/jjjj/</id>
-    <published>2017-04-15T02:18:37.000Z</published>
-    <updated>2017-04-18T11:56:08.139Z</updated>
-    
-    <content type="html"><![CDATA[<p>它起源于哪里？<br>恰恰与流行观念相反，Lorem Ipsum并不是简简单单的随机文本。它追溯于一篇公元前45年的经典拉丁著作，从而使它有着两千多年的岁数。弗吉尼亚州Hampden-Sydney大学拉丁系教授Richard McClintock曾在Lorem Ipsum段落中注意到一个涵义十分隐晦的拉丁词语，“consectetur”，通过这个单词详细查阅跟其有关的经典文学著作原文，McClintock教授发掘了这个不容置疑的出处。Lorem Ipsum始于西塞罗(Cicero)在公元前45年作的“de Finibus Bonorum et Malorum”（善恶之尽）里1.10.32 和1.10.33章节。这本书是一本关于道德理论的论述，曾在文艺复兴时期非常流行。Lorem Ipsum的第一行”Lorem ipsum dolor sit amet..”节选于1.10.32章节。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;它起源于哪里？&lt;br&gt;恰恰与流行观念相反，Lorem Ipsum并不是简简单单的随机文本。它追溯于一篇公元前45年的经典拉丁著作，从而使它有着两千多年的岁数。弗吉尼亚州Hampden-Sydney大学拉丁系教授Richard McClintock曾在Lorem Ipsum段
-    
-    </summary>
-    
-    
-      <category term="cnbeta" scheme="http://yoursite.com/tags/cnbeta/"/>
-    
-      <category term="android" scheme="http://yoursite.com/tags/android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Lorem Ipsum段落</title>
-    <link href="http://yoursite.com/2017-a/04/15/iii/"/>
-    <id>http://yoursite.com/2017-a/04/15/iii/</id>
-    <published>2017-04-15T02:18:26.000Z</published>
-    <updated>2017-04-18T14:19:02.955Z</updated>
-    
-    <content type="html"><![CDATA[<p>以下展示了自1500世纪以来使用的标准Lorem Ipsum段落，西塞罗笔下“de Finibus Bonorum et Malorum”章节1.10.32 ， 1.10.33的原著作，以及其1914年译自H. Rackham的英文版本。</p>
-<h6 id="我能从哪里获取？"><a href="#我能从哪里获取？" class="headerlink" title="我能从哪里获取？"></a>我能从哪里获取？</h6><p>如今互联网提供各种各样版本的Lorem Ipsum段落，但是大多数都多多少少出于刻意幽默或者其他随机插入的荒谬单词而被篡改过了。如果你想取用一段Lorem Ipsum，请确保段落中不含有令人尴尬的不恰当内容。所有网上的Lorem Ipsum生成器都倾向于在必要时重复预先准备的部分，然而这个生成器则是互联网上首个确切的生成器。它使用由超过200个拉丁单词所构造的词典，结合了几个模范句子结构，来生成看起来恰当的Lorem Ipsum。因此，生成出的结果无一例外免于重复，刻意的幽默，以及非典型的词汇等等。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">const name = <span class="string">'Tom'</span>;const name = <span class="string">'Tom'</span>;const name = <span class="string">'Tom'</span>;const name = <span class="string">'Tom'</span>;const name = <span class="string">'Tom'</span>;const name = <span class="string">'Tom'</span>;const name = <span class="string">'Tom'</span>;</div><div class="line"></div><div class="line">const sayName = <span class="keyword">function</span>(name)&#123;</div><div class="line">  console.log(name);</div><div class="line">&#125;;</div><div class="line"></div><div class="line">sayName();</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;以下展示了自1500世纪以来使用的标准Lorem Ipsum段落，西塞罗笔下“de Finibus Bonorum et Malorum”章节1.10.32 ， 1.10.33的原著作，以及其1914年译自H. Rackham的英文版本。&lt;/p&gt;
-&lt;h6 id=&quot;我能从哪里
-    
-    </summary>
-    
-    
-      <category term="cnbeta" scheme="http://yoursite.com/tags/cnbeta/"/>
-    
-      <category term="microsoft" scheme="http://yoursite.com/tags/microsoft/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Lorem Ipsum</title>
-    <link href="http://yoursite.com/2017-a/04/15/hhh/"/>
-    <id>http://yoursite.com/2017-a/04/15/hhh/</id>
-    <published>2017-04-15T02:18:17.000Z</published>
-    <updated>2017-04-18T12:02:03.926Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…</p>
-</blockquote>
-<h6 id="什么是Lorem-Ipsum"><a href="#什么是Lorem-Ipsum" class="headerlink" title="什么是Lorem Ipsum?"></a>什么是Lorem Ipsum?</h6><p>Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。</p>
-<h6 id="我们为何用它？"><a href="#我们为何用它？" class="headerlink" title="我们为何用它？"></a>我们为何用它？</h6><p>无可否认，当读者在浏览一个页面的排版时，难免会被可阅读的内容所分散注意力。Lorem Ipsum的目的就是为了保持字母多多少少标准及平均的分配，而不是“此处有文本，此处有文本”，从而让内容更像可读的英语。如今，很多桌面排版软件以及网页编辑用Lorem Ipsum作为默认的示范文本，搜一搜“Lorem Ipsum”就能找到这些网站的雏形。这些年来Lorem Ipsum演变出了各式各样的版本，有些出于偶然，有些则是故意的（刻意的幽默之类的）。<br><a id="more"></a></p>
-<h6 id="它起源于哪里？"><a href="#它起源于哪里？" class="headerlink" title="它起源于哪里？"></a>它起源于哪里？</h6><p>恰恰与流行观念相反，Lorem Ipsum并不是简简单单的随机文本。它追溯于一篇公元前45年的经典拉丁著作，从而使它有着两千多年的岁数。弗吉尼亚州Hampden-Sydney大学拉丁系教授Richard McClintock曾在Lorem Ipsum段落中注意到一个涵义十分隐晦的拉丁词语，“consectetur”，通过这个单词详细查阅跟其有关的经典文学著作原文，McClintock教授发掘了这个不容置疑的出处。Lorem Ipsum始于西塞罗(Cicero)在公元前45年作的“de Finibus Bonorum et Malorum”（善恶之尽）里1.10.32 和1.10.33章节。这本书是一本关于道德理论的论述，曾在文艺复兴时期非常流行。Lorem Ipsum的第一行”Lorem ipsum dolor sit amet..”节选于1.10.32章节。</p>
-<p>以下展示了自1500世纪以来使用的标准Lorem Ipsum段落，西塞罗笔下“de Finibus Bonorum et Malorum”章节1.10.32 ， 1.10.33的原著作，以及其1914年译自H. Rackham的英文版本。</p>
-<h6 id="我能从哪里获取？"><a href="#我能从哪里获取？" class="headerlink" title="我能从哪里获取？"></a>我能从哪里获取？</h6><p>如今互联网提供各种各样版本的Lorem Ipsum段落，但是大多数都多多少少出于刻意幽默或者其他随机插入的荒谬单词而被篡改过了。如果你想取用一段Lorem Ipsum，请确保段落中不含有令人尴尬的不恰当内容。所有网上的Lorem Ipsum生成器都倾向于在必要时重复预先准备的部分，然而这个生成器则是互联网上首个确切的生成器。它使用由超过200个拉丁单词所构造的词典，结合了几个模范句子结构，来生成看起来恰当的Lorem Ipsum。因此，生成出的结果无一例外免于重复，刻意的幽默，以及非典型的词汇等等。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h6 id=&quot;什么是Lorem-Ipsum&quot;&gt;&lt;a href=&quot;#什么是Lorem-Ipsum&quot; class=&quot;headerlink&quot; title=&quot;什么是Lorem Ipsum?&quot;&gt;&lt;/a&gt;什么是Lorem Ipsum?&lt;/h6&gt;&lt;p&gt;Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。&lt;/p&gt;
-&lt;h6 id=&quot;我们为何用它？&quot;&gt;&lt;a href=&quot;#我们为何用它？&quot; class=&quot;headerlink&quot; title=&quot;我们为何用它？&quot;&gt;&lt;/a&gt;我们为何用它？&lt;/h6&gt;&lt;p&gt;无可否认，当读者在浏览一个页面的排版时，难免会被可阅读的内容所分散注意力。Lorem Ipsum的目的就是为了保持字母多多少少标准及平均的分配，而不是“此处有文本，此处有文本”，从而让内容更像可读的英语。如今，很多桌面排版软件以及网页编辑用Lorem Ipsum作为默认的示范文本，搜一搜“Lorem Ipsum”就能找到这些网站的雏形。这些年来Lorem Ipsum演变出了各式各样的版本，有些出于偶然，有些则是故意的（刻意的幽默之类的）。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="cnbeta" scheme="http://yoursite.com/tags/cnbeta/"/>
-    
-      <category term="microsoft" scheme="http://yoursite.com/tags/microsoft/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>repulsive dashwoods</title>
-    <link href="http://yoursite.com/2017-a/04/15/ggg/"/>
-    <id>http://yoursite.com/2017-a/04/15/ggg/</id>
-    <published>2017-04-15T02:18:03.000Z</published>
-    <updated>2017-04-15T16:44:48.202Z</updated>
-    
-    <content type="html"><![CDATA[<p>Had repulsive dashwoods suspicion sincerity but advantage now him. Remark easily garret nor nay. Civil those mrs enjoy shy fat merry. You greatest jointure saw horrible. He private he on be imagine suppose. Fertile beloved evident through no service elderly is. Blind there if every no so at. Own neglected you preferred way sincerity delivered his attempted. To of message cottage windows do besides against uncivil.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Had repulsive dashwoods suspicion sincerity but advantage now him. Remark easily garret nor nay. Civil those mrs enjoy shy fat merry. You
+      &lt;p&gt;This is a image test post.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/wallpaper-2572384.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/wallpaper-2311325.jpg&quot; alt=&quot;C
     
     </summary>
     
@@ -141,58 +41,18 @@
   </entry>
   
   <entry>
-    <title>colonel hearted ferrars</title>
-    <link href="http://yoursite.com/2017-a/04/15/fff/"/>
-    <id>http://yoursite.com/2017-a/04/15/fff/</id>
-    <published>2017-04-15T02:17:59.000Z</published>
-    <updated>2017-04-15T16:45:02.352Z</updated>
+    <title></title>
+    <link href="http://yoursite.com/2013/12/25/no-title/"/>
+    <id>http://yoursite.com/2013/12/25/no-title/</id>
+    <published>2013-12-25T14:57:49.000Z</published>
+    <updated>2017-04-18T15:40:50.993Z</updated>
     
-    <content type="html"><![CDATA[<p>So by colonel hearted ferrars. Draw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry no he several excited am. Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she.</p>
+    <content type="html"><![CDATA[<p>This post doesn’t have a title. Make sure it’s accessible.</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;So by colonel hearted ferrars. Draw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry n
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>unsatiable</title>
-    <link href="http://yoursite.com/2017-a/04/15/eee/"/>
-    <id>http://yoursite.com/2017-a/04/15/eee/</id>
-    <published>2017-04-15T02:17:54.000Z</published>
-    <updated>2017-04-16T08:10:11.036Z</updated>
-    
-    <content type="html"><![CDATA[<p>Old unsatiable our now but considered travelling impression. In excuse hardly summer in basket misery. By rent an part need. At wrong of of water those linen. Needed oppose seemed how all. Very mrs shed shew gave you. Oh shutters do removing reserved wandered an. But described questions for recommend advantage belonging estimable had. Pianoforte reasonable as so am inhabiting. Chatty design remark and his abroad figure but its.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Old unsatiable our now but considered travelling impression. In excuse hardly summer in basket misery. By rent an part need. At wrong of 
-    
-    </summary>
-    
-    
-      <category term="hello" scheme="http://yoursite.com/tags/hello/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>This is ddd</title>
-    <link href="http://yoursite.com/2017-a/04/15/ddd/"/>
-    <id>http://yoursite.com/2017-a/04/15/ddd/</id>
-    <published>2017-04-15T02:17:46.000Z</published>
-    <updated>2017-04-15T16:46:57.682Z</updated>
-    
-    <content type="html"><![CDATA[<p>this is ddd, and nothing at all.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;this is ddd, and nothing at all.&lt;/p&gt;
+      &lt;p&gt;This post doesn’t have a title. Make sure it’s accessible.&lt;/p&gt;
 
     
     </summary>
@@ -201,148 +61,377 @@
   </entry>
   
   <entry>
-    <title>Imagine was you removal raising gravity</title>
-    <link href="http://yoursite.com/2017-a/04/15/ccc/"/>
-    <id>http://yoursite.com/2017-a/04/15/ccc/</id>
-    <published>2017-04-15T02:17:37.000Z</published>
-    <updated>2017-04-15T16:47:44.346Z</updated>
+    <title>Excerpts</title>
+    <link href="http://yoursite.com/2013/12/25/excerpts/"/>
+    <id>http://yoursite.com/2013/12/25/excerpts/</id>
+    <published>2013-12-24T16:23:23.000Z</published>
+    <updated>2017-04-18T15:40:50.988Z</updated>
     
-    <content type="html"><![CDATA[<p>Imagine was you removal raising gravity. Unsatiable understood or expression dissimilar so sufficient. Its party every heard and event gay. Advice he indeed things adieus in number so uneasy. To many four fact in he fail. My hung it quit next do of. It fifteen charmed by private savings it mr. Favourable cultivated alteration entreaties yet met sympathize. Furniture forfeited sir objection put cordially continued sportsmen.</p>
-<p>Dispatched entreaties boisterous say why stimulated. Certain forbade picture now prevent carried she get see sitting. Up twenty limits as months. Inhabit so perhaps of in to certain. Sex excuse chatty was seemed warmth. Nay add far few immediate sweetness earnestly dejection.</p>
-<p>Why end might ask civil again spoil. She dinner she our horses depend. Remember at children by reserved to vicinity. In affronting unreserved delightful simplicity ye. Law own advantage furniture continual sweetness bed agreeable perpetual. Oh song well four only head busy it. Afford son she had lively living. Tastes lovers myself too formal season our valley boy. Lived it their their walls might to by young.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Imagine was you removal raising gravity. Unsatiable understood or expression dissimilar so sufficient. Its party every heard and event ga
-    
-    </summary>
-    
-    
-      <category term="random" scheme="http://yoursite.com/tags/random/"/>
-    
-      <category term="gravity" scheme="http://yoursite.com/tags/gravity/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Breakfast procuring</title>
-    <link href="http://yoursite.com/2017-a/04/15/bbb/"/>
-    <id>http://yoursite.com/2017-a/04/15/bbb/</id>
-    <published>2017-04-15T02:17:27.000Z</published>
-    <updated>2017-04-15T16:43:27.381Z</updated>
-    
-    <content type="html"><![CDATA[<p>Breakfast procuring nay end happiness allowance assurance frankness. Met simplicity nor difficulty unreserved who. Entreaties mr conviction dissimilar me astonished estimating cultivated. On no applauded exquisite my additions. Pronounce add boy estimable nay suspected. You sudden nay elinor thirty esteem temper. Quiet leave shy you gay off asked large style.</p>
-<p>Not him old music think his found enjoy merry. Listening acuteness dependent at or an. Apartments thoroughly unsatiable terminated sex how themselves. She are ten hours wrong walls stand early. Domestic perceive on an ladyship extended received do. Why jennings our whatever his learning gay perceive. Is against no he without subject. Bed connection unreserved preference partiality not unaffected. Years merit trees so think in hoped we as.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Breakfast procuring nay end happiness allowance assurance frankness. Met simplicity nor difficulty unreserved who. Entreaties mr convicti
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Shewing</title>
-    <link href="http://yoursite.com/2017-a/04/15/aaa/"/>
-    <id>http://yoursite.com/2017-a/04/15/aaa/</id>
-    <published>2017-04-15T02:14:25.000Z</published>
-    <updated>2017-04-16T08:33:18.446Z</updated>
-    
-    <content type="html"><![CDATA[<p>Shewing met parties gravity husband sex pleased. On to no kind do next feel held walk. Last own loud and knew give gay four. Sentiments motionless or principles preference excellence am. Literature surrounded insensible at indulgence or to admiration remarkably. Matter future lovers desire marked boy use. Chamber reached do he nothing be.</p>
-<p>It as announcing it me stimulated frequently continuing. Least their she you now above going stand forth. He pretty future afraid should genius spirit on. Set property addition building put likewise get. Of will at sell well at as. Too want but tall nay like old. Removing yourself be in answered he. Consider occasion get improved him she eat. Letter by lively oh denote an.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Shewing met parties gravity husband sex pleased. On to no kind do next feel held walk. Last own loud and knew give gay four. Sentiments m
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>遇见</title>
-    <link href="http://yoursite.com/2017-a/04/11/a-song/"/>
-    <id>http://yoursite.com/2017-a/04/11/a-song/</id>
-    <published>2017-04-11T10:05:32.000Z</published>
-    <updated>2017-04-18T11:54:44.641Z</updated>
-    
-    <content type="html"><![CDATA[<p>听见 冬天 的离开</p>
-<p>我在某年某月 醒过来</p>
-<p>我想 我等 我期待</p>
-<p>未来却不能因此安排</p>
-<p>阴天 傍晚 车窗外</p>
+    <content type="html"><![CDATA[<p>The following contents should be invisible in home/archive page.</p>
 <a id="more"></a>
-<p>未来有一个人在等待</p>
-<p>向左 向右 向前看</p>
-<p>爱要拐几个弯才来</p>
-<p>我遇见谁 会有怎样的对白</p>
-<p>我等的人 他在多远的未来</p>
-<p>我听见风 来自地铁和人海</p>
-<p>我排着队 拿着爱的号码牌</p>
-<blockquote>
-<p>Let life be like summer flowers ,and death be like autumn leaves.</p>
-</blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna vitae velit eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Aliquam eleifend dolor vitae libero pharetra adipiscing. Etiam adipiscing dolor a quam tempor, eu convallis nulla varius. Aliquam sollicitudin risus a porta aliquam. Ut nec velit dolor. Proin eget leo lobortis, aliquam est sed, mollis mauris. Fusce vitae leo pretium massa accumsan condimentum. Fusce malesuada gravida lectus vel vulputate. Donec bibendum porta nibh ut aliquam.</p>
+<p>Sed lorem felis, congue non fringilla eu, aliquam eu eros. Curabitur orci libero, mollis sed semper vitae, adipiscing in lectus. Aenean non egestas odio. Donec sollicitudin nisi quis lorem gravida, in pharetra mauris fringilla. Duis sit amet faucibus dolor, id aliquam neque. In egestas, odio gravida tempor dictum, mauris felis faucibus purus, sit amet commodo lacus diam vitae est. Ut ut quam eget massa semper sodales. Aenean non ipsum cursus, blandit lectus in, ornare odio. Curabitur ultrices porttitor vulputate.</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;听见 冬天 的离开&lt;/p&gt;
-&lt;p&gt;我在某年某月 醒过来&lt;/p&gt;
-&lt;p&gt;我想 我等 我期待&lt;/p&gt;
-&lt;p&gt;未来却不能因此安排&lt;/p&gt;
-&lt;p&gt;阴天 傍晚 车窗外&lt;/p&gt;
+      &lt;p&gt;The following contents should be invisible in home/archive page.&lt;/p&gt;
     
     </summary>
     
-      <category term="Diary" scheme="http://yoursite.com/categories/Diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Videos</title>
+    <link href="http://yoursite.com/2013/12/25/videos/"/>
+    <id>http://yoursite.com/2013/12/25/videos/</id>
+    <published>2013-12-24T16:19:15.000Z</published>
+    <updated>2017-04-18T15:40:50.995Z</updated>
+    
+    <content type="html"><![CDATA[<p>This is a video test post.</p>
+<p><strong>Youtube</strong></p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/TIbZDRXM-Tg" frameborder="0" allowfullscreen></iframe></div>
+<p><strong>Vimeo</strong></p>
+<div class="video-container"><iframe src="//player.vimeo.com/video/82090131" frameborder="0" allowfullscreen></iframe></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This is a video test post.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Youtube&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;//www.youtube.com/embed/TIbZDRXM
+    
+    </summary>
     
     
-      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+  </entry>
+  
+  <entry>
+    <title>Gallery Post</title>
+    <link href="http://yoursite.com/2013/12/25/gallery-post/"/>
+    <id>http://yoursite.com/2013/12/25/gallery-post/</id>
+    <published>2013-12-24T16:16:18.000Z</published>
+    <updated>2017-04-18T15:40:50.988Z</updated>
     
-      <category term="song" scheme="http://yoursite.com/tags/song/"/>
+    <content type="html"><![CDATA[<p>This post contains 4 photos:</p>
+<ul>
+<li>Widescreen wallpaper</li>
+<li>Portrait photo</li>
+<li>Dual widescreen wallpaper</li>
+<li>Small photo</li>
+</ul>
+<p>All photos should be displayed properly.</p>
+<p><em>From <a href="http://wallbase.cc" target="_blank" rel="external">Wallbase.cc</a></em></p>
+]]></content>
     
-      <category term="孙燕姿" scheme="http://yoursite.com/tags/%E5%AD%99%E7%87%95%E5%A7%BF/"/>
+    <summary type="html">
+    
+      &lt;p&gt;This post contains 4 photos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Widescreen wallpaper&lt;/li&gt;
+&lt;li&gt;Portrait photo&lt;/li&gt;
+&lt;li&gt;Dual widescreen wallpaper&lt;/li&gt;
+&lt;li&gt;Small 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Tag Plugins</title>
+    <link href="http://yoursite.com/2013/12/25/tag-plugins/"/>
+    <id>http://yoursite.com/2013/12/25/tag-plugins/</id>
+    <published>2013-12-24T16:14:39.000Z</published>
+    <updated>2017-04-18T15:40:50.994Z</updated>
+    
+    <content type="html"><![CDATA[<p>This post is used for testing tag plugins. See <a href="http://zespia.tw/hexo/docs/tag-plugins.html" target="_blank" rel="external">docs</a> for more info.</p>
+<h2 id="Block-Quote"><a href="#Block-Quote" class="headerlink" title="Block Quote"></a>Block Quote</h2><h3 id="Normal-blockquote"><a href="#Normal-blockquote" class="headerlink" title="Normal blockquote"></a>Normal blockquote</h3><blockquote>
+<p>Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.</p>
+</blockquote>
+<h3 id="Quote-from-a-book"><a href="#Quote-from-a-book" class="headerlink" title="Quote from a book"></a>Quote from a book</h3><blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
+<h3 id="Quote-from-Twitter"><a href="#Quote-from-Twitter" class="headerlink" title="Quote from Twitter"></a>Quote from Twitter</h3><blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="external">http://devdocs.io</a></p>
+<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="external">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
+<h3 id="Quote-from-an-article-on-the-web"><a href="#Quote-from-an-article-on-the-web" class="headerlink" title="Quote from an article on the web"></a>Quote from an article on the web</h3><blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
+<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="external">Welcome to Island Marketing</a></cite></footer></blockquote>
+<h2 id="Code-Block"><a href="#Code-Block" class="headerlink" title="Code Block"></a>Code Block</h2><h3 id="Normal-code-block"><a href="#Normal-code-block" class="headerlink" title="Normal code block"></a>Normal code block</h3><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">alert</span>(<span class="string">'Hello World!'</span>);</div></pre></td></tr></table></figure>
+<h3 id="With-caption"><a href="#With-caption" class="headerlink" title="With caption"></a>With caption</h3><figure class="highlight cpp"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">array</span>.<span class="built_in">map</span>(callback[, thisArg])</div></pre></td></tr></table></figure>
+<h3 id="With-caption-and-URL"><a href="#With-caption-and-URL" class="headerlink" title="With caption and URL"></a>With caption and URL</h3><figure class="highlight excel"><figcaption><span>.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="external">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="built_in">false</span>, <span class="number">2</span>, ‘’, <span class="number">3</span>]);</div><div class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div></pre></td></tr></table></figure>
+<h3 id="With-marked-lines"><a href="#With-marked-lines" class="headerlink" title="With marked lines"></a>With marked lines</h3><p>Line 1,7-8,10 should be marked with different color.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line marked"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</div><div class="line"></div><div class="line"><span class="keyword">const</span> hostname = <span class="string">'127.0.0.1'</span>;</div><div class="line"><span class="keyword">const</span> port = <span class="number">1337</span>;</div><div class="line"></div><div class="line">http.createServer(<span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</div><div class="line marked">  res.writeHead(<span class="number">200</span>, &#123; <span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span> &#125;);</div><div class="line marked">  res.end(<span class="string">'Hello World\n'</span>);</div><div class="line">&#125;).listen(port, hostname, () =&gt; &#123;</div><div class="line marked">  <span class="built_in">console</span>.log(<span class="string">`Server running at http://<span class="subst">$&#123;hostname&#125;</span>:<span class="subst">$&#123;port&#125;</span>/`</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>Note: Theme’s style should support <code>.highlight.line.marked</code> (recommend to use the selection or current line color).</p>
+<h3 id="Gist"><a href="#Gist" class="headerlink" title="Gist"></a>Gist</h3><script src="//gist.github.com/996818.js"></script>
+<h3 id="jsFiddle"><a href="#jsFiddle" class="headerlink" title="jsFiddle"></a>jsFiddle</h3><iframe scrolling="no" width="100%" height="300" src="http://jsfiddle.net/ccWP7/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen></iframe>
+<h2 id="Pullquote"><a href="#Pullquote" class="headerlink" title="Pullquote"></a>Pullquote</h2><h3 id="Left"><a href="#Left" class="headerlink" title="Left"></a>Left</h3><blockquote class="pullquote left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus molestie arcu, et fringilla mauris placerat ac. Nullam luctus bibendum risus. Ut cursus sed ipsum feugiat egestas. Suspendisse elementum, velit eu consequat consequat, augue lorem dapibus libero, eget pulvinar dolor est sit amet nulla. Suspendisse a porta tortor, et posuere mi. Pellentesque ultricies, mi quis volutpat malesuada, erat felis vulputate nisl, ac congue ante tortor ut ante. Proin aliquam sem vel mauris tincidunt, eget scelerisque tortor euismod. Nulla tincidunt enim nec commodo dictum. Mauris id sapien et orci gravida luctus id ut dui. In vel vulputate odio. Duis vel turpis molestie, scelerisque enim eu, lobortis eros. Cras at ipsum gravida, sagittis ante vel, viverra tellus. Nunc mauris turpis, elementum ullamcorper nisl pretium, ultrices cursus justo. Mauris porttitor commodo eros, ac ornare orci interdum in. Cras fermentum cursus leo sed mattis. In dignissim lorem sem, sit amet elementum mauris venenatis ac.</p>
+<h3 id="Right"><a href="#Right" class="headerlink" title="Right"></a>Right</h3><blockquote class="pullquote right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula justo, lobortis sit amet semper vel, dignissim sit amet libero. Praesent ac tempus ligula. Maecenas at gravida odio. Etiam tristique volutpat lacus eu faucibus. Donec non tempus arcu. Phasellus adipiscing, mauris nec mollis egestas, ipsum nunc auctor velit, et rhoncus lorem ipsum at ante. Praesent et sem in velit volutpat auctor. Duis vel mauris nulla. Maecenas mattis interdum ante, quis sagittis nibh cursus et. Nulla facilisi. Morbi convallis gravida tortor, ut fermentum enim gravida et. Nunc vel dictum nisl, non ultrices libero. Proin vestibulum felis eget orci consectetur lobortis. Vestibulum augue nulla, iaculis vitae augue vehicula, dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This post is used for testing tag plugins. See &lt;a href=&quot;http://zespia.tw/hexo/docs/tag-plugins.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;docs&lt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>www.google.com</title>
+    <link href="http://yoursite.com/2013/12/24/link-post-without-title/"/>
+    <id>http://yoursite.com/2013/12/24/link-post-without-title/</id>
+    <published>2013-12-24T15:44:13.000Z</published>
+    <updated>2017-04-18T15:40:50.990Z</updated>
+    
+    <content type="html"><![CDATA[<p>This is a link post without a title. The title should be the link with or without protocol. Clicking on the link should open <a href="http://www.google.com/" target="_blank" rel="external">Google</a> in a new tab or window.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This is a link post without a title. The title should be the link with or without protocol. Clicking on the link should open &lt;a href=&quot;htt
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日本語テスト</title>
+    <link href="http://yoursite.com/2013/12/24/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/"/>
+    <id>http://yoursite.com/2013/12/24/日本語テスト/</id>
+    <published>2013-12-24T15:33:26.000Z</published>
+    <updated>2017-04-18T15:40:50.996Z</updated>
+    
+    <content type="html"><![CDATA[<p>This is a Japanese test post.</p>
+<p>私は昨日ついにその助力家というのの上よりするたなけれ。</p>
+<p>最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。</p>
+<p>がたを知っないはずも同時に九月をいよいよたありた。</p>
+<p>もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たうませないが、この次第も私か兄具合に使うて、槙さんののに当人のあなたにさぞご意味と行くて私個人が小尊敬を聴いように同時に同反抗に集っだうて、いよいよまず相当へあっうからいだ事をしでなけれ。</p>
+<blockquote>
+<p>それでそれでもご時日をしはずはたったいやと突き抜けるますて、その元がは行ったてという獄を尽すていけですた。</p>
+</blockquote>
+<p>この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。</p>
+<p><em>From <a href="http://lipsum.sugutsukaeru.jp/index.cgi" target="_blank" rel="external">すぐ使えるダミーテキスト - 日本語 Lorem ipsum</a></em></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This is a Japanese test post.&lt;/p&gt;
+&lt;p&gt;私は昨日ついにその助力家というのの上よりするたなけれ。&lt;/p&gt;
+&lt;p&gt;最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。&lt;/p&gt;
+&lt;p&gt;がた
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>中文測試</title>
+    <link href="http://yoursite.com/2013/12/24/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/"/>
+    <id>http://yoursite.com/2013/12/24/中文測試/</id>
+    <published>2013-12-24T15:31:30.000Z</published>
+    <updated>2017-04-18T15:40:50.995Z</updated>
+    
+    <content type="html"><![CDATA[<p>This is a Chinese test post.</p>
+<p>善我王上魚、產生資西員合兒臉趣論。畫衣生這著爸毛親可時，安程幾？合學作。觀經而作建。都非子作這！法如言子你關！手師也。</p>
+<p>以也座論頭室業放。要車時地變此親不老高小是統習直麼調未，行年香一？</p>
+<p>就竟在，是我童示讓利分和異種百路關母信過明驗有個歷洋中前合著區亮風值新底車有正結，進快保的行戰從：弟除文辦條國備當來際年每小腳識世可的的外的廣下歌洲保輪市果底天影；全氣具些回童但倒影發狀在示，數上學大法很，如要我……月品大供這起服滿老？應學傳者國：山式排只不之然清同關；細車是！停屋常間又，資畫領生，相們制在？公別的人寫教資夠。資再我我！只臉夫藝量不路政吃息緊回力之；兒足灣電空時局我怎初安。意今一子區首者微陸現際安除發連由子由而走學體區園我車當會，經時取頭，嚴了新科同？很夫營動通打，出和導一樂，查旅他。坐是收外子發物北看蘭戰坐車身做可來。道就學務。</p>
+<p>國新故。</p>
+<blockquote>
+<p>工步他始能詩的，裝進分星海演意學值例道……於財型目古香亮自和這乎？化經溫詩。只賽嚴大一主價世哥受的沒有中年即病行金拉麼河。主小路了種就小為廣不？</p>
+</blockquote>
+<p><em>From <a href="http://www.richyli.com/tool/loremipsum/" target="_blank" rel="external">亂數假文產生器 - Chinese Lorem Ipsum</a></em></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This is a Chinese test post.&lt;/p&gt;
+&lt;p&gt;善我王上魚、產生資西員合兒臉趣論。畫衣生這著爸毛親可時，安程幾？合學作。觀經而作建。都非子作這！法如言子你關！手師也。&lt;/p&gt;
+&lt;p&gt;以也座論頭室業放。要車時地變此親不老高小是統習直麼調未，行年香一？&lt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</title>
+    <link href="http://yoursite.com/2013/12/24/long-title/"/>
+    <id>http://yoursite.com/2013/12/24/long-title/</id>
+    <published>2013-12-24T15:31:06.000Z</published>
+    <updated>2017-04-18T15:40:50.991Z</updated>
+    
+    <content type="html"><![CDATA[<p>This post has a long title. Make sure the title displayed right.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This post has a long title. Make sure the title displayed right.&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Categories</title>
+    <link href="http://yoursite.com/2013/12/24/categories/"/>
+    <id>http://yoursite.com/2013/12/24/categories/</id>
+    <published>2013-12-24T15:30:09.000Z</published>
+    <updated>2017-04-18T15:40:50.987Z</updated>
+    
+    <content type="html"><![CDATA[<p>This post contains 3 categories. Make sure your theme can display all of the categories.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This post contains 3 categories. Make sure your theme can display all of the categories.&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Foo" scheme="http://yoursite.com/categories/Foo/"/>
+    
+      <category term="Bar" scheme="http://yoursite.com/categories/Foo/Bar/"/>
+    
+      <category term="Baz" scheme="http://yoursite.com/categories/Foo/Bar/Baz/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Link Post</title>
+    <link href="http://yoursite.com/2013/12/24/link-post/"/>
+    <id>http://yoursite.com/2013/12/24/link-post/</id>
+    <published>2013-12-24T15:30:04.000Z</published>
+    <updated>2017-04-18T15:40:50.990Z</updated>
+    
+    <content type="html"><![CDATA[<p>This is a link post. Clicking on the link should open <a href="http://www.google.com/" target="_blank" rel="external">Google</a> in a new tab or window.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This is a link post. Clicking on the link should open &lt;a href=&quot;http://www.google.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Google&lt;/a&gt; in a new
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Tags</title>
+    <link href="http://yoursite.com/2013/12/24/tags/"/>
+    <id>http://yoursite.com/2013/12/24/tags/</id>
+    <published>2013-12-24T15:29:53.000Z</published>
+    <updated>2017-04-18T15:40:50.994Z</updated>
+    
+    <content type="html"><![CDATA[<p>This post contains 3 tags. Make sure your theme can display all of the tags.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This post contains 3 tags. Make sure your theme can display all of the tags.&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="Foo" scheme="http://yoursite.com/tags/Foo/"/>
+    
+      <category term="Bar" scheme="http://yoursite.com/tags/Bar/"/>
+    
+      <category term="Baz" scheme="http://yoursite.com/tags/Baz/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Elements</title>
+    <link href="http://yoursite.com/2013/12/24/elements/"/>
+    <id>http://yoursite.com/2013/12/24/elements/</id>
+    <published>2013-12-24T15:29:08.000Z</published>
+    <updated>2017-04-18T15:40:50.987Z</updated>
+    
+    <content type="html"><![CDATA[<p>The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don’t forget to redefine the style by yourself.</p>
+<hr>
+<h1 id="Heading-1"><a href="#Heading-1" class="headerlink" title="Heading 1"></a>Heading 1</h1><h2 id="Heading-2"><a href="#Heading-2" class="headerlink" title="Heading 2"></a>Heading 2</h2><h3 id="Heading-3"><a href="#Heading-3" class="headerlink" title="Heading 3"></a>Heading 3</h3><h4 id="Heading-4"><a href="#Heading-4" class="headerlink" title="Heading 4"></a>Heading 4</h4><h5 id="Heading-5"><a href="#Heading-5" class="headerlink" title="Heading 5"></a>Heading 5</h5><h6 id="Heading-6"><a href="#Heading-6" class="headerlink" title="Heading 6"></a>Heading 6</h6><hr>
+<h2 id="Paragraph"><a href="#Paragraph" class="headerlink" title="Paragraph"></a>Paragraph</h2><p>Lorem ipsum dolor sit amet, <a href="">test link</a> consectetur adipiscing elit. <strong>Strong text</strong> pellentesque ligula commodo viverra vehicula. <em>Italic text</em> at ullamcorper enim. Morbi a euismod nibh. <u>Underline text</u> non elit nisl. <del>Deleted text</del> tristique, sem id condimentum tempus, metus lectus venenatis mauris, sit amet semper lorem felis a eros. Fusce egestas nibh at sagittis auctor. Sed ultricies ac arcu quis molestie. Donec dapibus nunc in nibh egestas, vitae volutpat sem iaculis. Curabitur sem tellus, elementum nec quam id, fermentum laoreet mi. Ut mollis ullamcorper turpis, vitae facilisis velit ultricies sit amet. Etiam laoreet dui odio, id tempus justo tincidunt id. Phasellus scelerisque nunc sed nunc ultricies accumsan.</p>
+<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. <code>Sed erat diam</code>, blandit eget felis aliquam, rhoncus varius urna. Donec tellus sapien, sodales eget ante vitae, feugiat ullamcorper urna. Praesent auctor dui vitae dapibus eleifend. Proin viverra mollis neque, ut ullamcorper elit posuere eget.</p>
+<blockquote>
+<p>Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.</p>
+</blockquote>
+<p>Maecenas ornare arcu at mi suscipit, non molestie tortor ultrices. Aenean convallis, diam et congue ultricies, erat magna tincidunt orci, pulvinar posuere mi sapien ac magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent vitae placerat mauris. Nullam laoreet ante posuere tortor blandit auctor. Sed id ligula volutpat leo consequat placerat. Mauris fermentum dolor sed augue malesuada sollicitudin. Vivamus ultrices nunc felis, quis viverra orci eleifend ut. Donec et quam id urna cursus posuere. Donec elementum scelerisque laoreet.</p>
+<h2 id="List-Types"><a href="#List-Types" class="headerlink" title="List Types"></a>List Types</h2><h3 id="Definition-List-dl"><a href="#Definition-List-dl" class="headerlink" title="Definition List (dl)"></a>Definition List (dl)</h3><dl><dt>Definition List Title</dt><dd>This is a definition list division.</dd></dl>
+
+<h3 id="Ordered-List-ol"><a href="#Ordered-List-ol" class="headerlink" title="Ordered List (ol)"></a>Ordered List (ol)</h3><ol>
+<li>List Item 1</li>
+<li>List Item 2</li>
+<li>List Item 3</li>
+</ol>
+<h3 id="Unordered-List-ul"><a href="#Unordered-List-ul" class="headerlink" title="Unordered List (ul)"></a>Unordered List (ul)</h3><ul>
+<li>List Item 1</li>
+<li>List Item 2</li>
+<li>List Item 3</li>
+</ul>
+<h2 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h2><table>
+<thead>
+<tr>
+<th>Table Header 1</th>
+<th>Table Header 2</th>
+<th>Table Header 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Division 1</td>
+<td>Division 2</td>
+<td>Division 3</td>
+</tr>
+<tr>
+<td>Division 1</td>
+<td>Division 2</td>
+<td>Division 3</td>
+</tr>
+<tr>
+<td>Division 1</td>
+<td>Division 2</td>
+<td>Division 3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Misc-Stuff-abbr-acronym-sub-sup-etc"><a href="#Misc-Stuff-abbr-acronym-sub-sup-etc" class="headerlink" title="Misc Stuff - abbr, acronym, sub, sup, etc."></a>Misc Stuff - abbr, acronym, sub, sup, etc.</h2><p>Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <cite>cite</cite>. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  <abbr title="Avenue">AVE</abbr></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don’t forget to redefi
+    
+    </summary>
+    
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017-a/03/19/hello-world/"/>
-    <id>http://yoursite.com/2017-a/03/19/hello-world/</id>
-    <published>2017-03-19T14:32:48.570Z</published>
-    <updated>2017-04-14T11:18:25.872Z</updated>
+    <link href="http://yoursite.com/2013/12/24/hello-world/"/>
+    <id>http://yoursite.com/2013/12/24/hello-world/</id>
+    <published>2013-12-24T09:49:32.000Z</published>
+    <updated>2017-04-18T15:40:50.989Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank" rel="external">documentation</a> to learn how to use.</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo server&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;p&gt;Welcome to &lt;a href=&quot;http://zespia.tw/hexo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;http://z
     
     </summary>
     
-    
-      <category term="test" scheme="http://yoursite.com/tags/test/"/>
-    
-      <category term="hello world" scheme="http://yoursite.com/tags/hello-world/"/>
     
   </entry>
   

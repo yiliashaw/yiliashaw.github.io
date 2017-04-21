@@ -58,13 +58,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2013-a/12/24/link-post/</loc>
-    
-    <lastmod>2017-04-18T15:40:50.990Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2013-a/12/24/link-post-without-title/</loc>
     
     <lastmod>2017-04-18T15:40:50.990Z</lastmod>
@@ -72,14 +65,21 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2013-a/12/24/hello-world/</loc>
+    <loc>http://yoursite.com/2013-a/12/24/link-post/</loc>
+    
+    <lastmod>2017-04-18T15:40:50.990Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2013-a/12/26/images/</loc>
     
     <lastmod>2017-04-18T15:40:50.989Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2013-a/12/26/images/</loc>
+    <loc>http://yoursite.com/2013-a/12/24/hello-world/</loc>
     
     <lastmod>2017-04-18T15:40:50.989Z</lastmod>
     

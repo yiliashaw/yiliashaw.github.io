@@ -7,7 +7,7 @@
 <blockquote>
 <p><strong>Note</strong>: document.write in <strong>deferred or asynchronous</strong> scripts will be <strong>ignored</strong>, and you’ll get a message like “A call to document.write() from an asynchronously-loaded external script was ignored” in the error console.</p>
 </blockquote>
-<p>简单来说，<code>&quot;//gist.github.com/xxxx.js&#39;</code>这个js本质上就是用<code>document.write</code>往页面里写东西。你要是在script里加上<code>defer</code>或<code>async</code>还不行，整段代码会被忽略掉导致页面上毛线也没有。</p>
+<p>简单来说，<code>&#39;//gist.github.com/xxxx.js&#39;</code>这个js本质上就是用<code>document.write</code>往页面里写东西。你要是在script里加上<code>defer</code>或<code>async</code>还不行，整段代码会被忽略掉导致页面上毛线也没有。</p>
 <p>所幸，在github发现在另外一个一样功能的插件：<a href="https://github.com/blairvanderhoof/gist-embed" target="_blank" rel="external">gist-embed</a>。</p>
 <p>gist-embed是通过ajax来处理目标gist的jason版本数据。而这个过程是异步的，所以并不会阻塞后面内容的解析。</p>
 <p>具体的使用方法结合gist-embed上所写的，由于我相当于要使用这个来替换hexo默认的gist插件，所以在主题的文件夹下增加了一个scripts/customGist.js，内容如下：</p>

@@ -9,7 +9,7 @@
 </blockquote>
 <p>简单来说，<code>&#39;//gist.github.com/xxxx.js&#39;</code>这个js本质上就是用<code>document.write</code>往页面里写东西。你要是在script里加上<code>defer</code>或<code>async</code>还不行，整段代码会被忽略掉导致页面上毛线也没有。</p>
 <p>所幸，在github发现在另外一个一样功能的插件：<a href="https://github.com/blairvanderhoof/gist-embed" target="_blank" rel="external">gist-embed</a>。</p>
-<p>gist-embed是通过ajax来处理目标gist的jason版本数据。而这个过程是异步的，所以并不会阻塞后面内容的解析。</p>
+<p>gist-embed是通过ajax来处理目标gist的json版本数据。而这个过程是异步的，所以并不会阻塞后面内容的解析。</p>
 <p>具体的使用方法结合gist-embed上所写的，由于我相当于要使用这个来替换hexo默认的gist插件，所以在主题的文件夹下增加了一个scripts/customGist.js，内容如下：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">hexo.extend.tag.register(<span class="string">'gist'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">args</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> id = args.shift();</div><div class="line">  <span class="keyword">var</span> file = args.length ? <span class="string">'?file='</span> + args[<span class="number">0</span>] : <span class="string">''</span>;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;code data-gist-id="'</span> + id + <span class="string">'" class="highlight plain"&gt;&lt;/code&gt;'</span>;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>一切就绪后<code>hexo g</code>，<code>hexo s</code>，铛铛铛铛~</p>

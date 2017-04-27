@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017-a/04/27/hexo-gist-plugin/</loc>
+    
+    <lastmod>2017-04-27T03:49:56.602Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2013-a/12/25/tag-plugins/</loc>
     
     <lastmod>2017-04-24T06:52:29.746Z</lastmod>
@@ -79,14 +86,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2013-a/12/24/link-post/</loc>
+    <loc>http://yoursite.com/2013-a/12/24/link-post-without-title/</loc>
     
     <lastmod>2017-04-18T15:40:50.990Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2013-a/12/24/link-post-without-title/</loc>
+    <loc>http://yoursite.com/2013-a/12/24/link-post/</loc>
     
     <lastmod>2017-04-18T15:40:50.990Z</lastmod>
     
@@ -100,13 +107,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2013-a/12/25/gallery-post/</loc>
-    
-    <lastmod>2017-04-18T15:40:50.988Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2013-a/12/25/excerpts/</loc>
     
     <lastmod>2017-04-18T15:40:50.988Z</lastmod>
@@ -114,14 +114,21 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2013-a/12/24/elements/</loc>
+    <loc>http://yoursite.com/2013-a/12/25/gallery-post/</loc>
+    
+    <lastmod>2017-04-18T15:40:50.988Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2013-a/12/24/categories/</loc>
     
     <lastmod>2017-04-18T15:40:50.987Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2013-a/12/24/categories/</loc>
+    <loc>http://yoursite.com/2013-a/12/24/elements/</loc>
     
     <lastmod>2017-04-18T15:40:50.987Z</lastmod>
     

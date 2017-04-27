@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-24T06:51:55.468Z</updated>
+  <updated>2017-04-27T03:49:56.602Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo gist plugin 阻塞页面</title>
+    <link href="http://yoursite.com/2017-a/04/27/hexo-gist-plugin/"/>
+    <id>http://yoursite.com/2017-a/04/27/hexo-gist-plugin/</id>
+    <published>2017-04-27T02:21:13.000Z</published>
+    <updated>2017-04-27T03:49:56.602Z</updated>
+    
+    <content type="html"><![CDATA[<p>不知道小伙伴们在给自己写的hexo theme做unit test的时候，有没有发现，那篇tag plugin测试post的gist部分会导致页面加载像是卡住了一样。</p>
+<p>hexo对gist标签的处理是这样的：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">gistTag</span>(<span class="params">args, content</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> id = args.shift();</div><div class="line">  <span class="keyword">var</span> file = args.length ? <span class="string">'?file='</span> + args[<span class="number">0</span>] : <span class="string">''</span>;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;script src="//gist.github.com/'</span> + id + <span class="string">'.js'</span> + file + <span class="string">'"&gt;&lt;/script&gt;'</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这是没有问题的，问题在于，<code>&lt;script&gt;</code>元素在不使用<code>defer</code>和<code>async</code>属性的情况下，是会阻塞页面后面内容的解析，再由于国内网络环境，整个页面就像是被卡住了一样，体验非常不好。</p>
+<p>于是就想，给上面那段代码的<code>script</code>标签加上<code>defer</code>和<code>async</code>不就好了吗？</p>
+<p>嗯，整段gist的内容干脆不显示了。根据console上的提示search之，得到来自<a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/write" target="_blank" rel="external">MDN</a>的答案如下：</p>
+<blockquote>
+<p><strong>Note</strong>: document.write in <strong>deferred or asynchronous</strong> scripts will be <strong>ignored</strong>, and you’ll get a message like “A call to document.write() from an asynchronously-loaded external script was ignored” in the error console.</p>
+</blockquote>
+<p>简单来说，<code>&quot;//gist.github.com/xxxx.js&#39;</code>这个js本质上就是用<code>document.write</code>往页面里写东西。你要是在script里加上<code>defer</code>或<code>async</code>还不行，整段代码会被忽略掉导致页面上毛线也没有。</p>
+<p>所幸，在github发现在另外一个一样功能的插件：<a href="https://github.com/blairvanderhoof/gist-embed" target="_blank" rel="external">gist-embed</a>。</p>
+<p>gist-embed是通过ajax来处理目标gist的jason版本数据。而这个过程是异步的，所以并不会阻塞后面内容的解析。</p>
+<p>具体的使用方法结合gist-embed上所写的，由于我相当于要使用这个来替换hexo默认的gist插件，所以在主题的文件夹下增加了一个scripts/customGist.js，内容如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">hexo.extend.tag.register(<span class="string">'gist'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">args</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> id = args.shift();</div><div class="line">  <span class="keyword">var</span> file = args.length ? <span class="string">'?file='</span> + args[<span class="number">0</span>] : <span class="string">''</span>;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;code data-gist-id="'</span> + id + <span class="string">'" class="highlight plain"&gt;&lt;/code&gt;'</span>;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>一切就绪后<code>hexo g</code>，<code>hexo s</code>，铛铛铛铛~</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不知道小伙伴们在给自己写的hexo theme做unit test的时候，有没有发现，那篇tag plugin测试post的gist部分会导致页面加载像是卡住了一样。&lt;/p&gt;
+&lt;p&gt;hexo对gist标签的处理是这样的：&lt;/p&gt;
+&lt;figure class=&quot;highlig
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="gist" scheme="http://yoursite.com/tags/gist/"/>
+    
+  </entry>
   
   <entry>
     <title>Images</title>

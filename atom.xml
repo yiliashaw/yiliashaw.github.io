@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-17T14:50:12.502Z</updated>
+  <updated>2018-03-18T08:31:50.815Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,200 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何编写和构建一个 JS 库</title>
+    <link href="http://yoursite.com/2018-a/03/18/how-to-write-js-libraries/"/>
+    <id>http://yoursite.com/2018-a/03/18/how-to-write-js-libraries/</id>
+    <published>2018-03-17T17:54:18.000Z</published>
+    <updated>2018-03-18T08:31:50.815Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li>注： 翻译自<a href="https://medium.com/@kelin2025/so-you-wanna-use-es6-modules-714f48b3a953" target="_blank" rel="external">How to write and build JS libraries in 2018</a></li>
+</ul>
+<p>在开始之前，我建议您阅读我以前的一篇关于创建极小 size 的 JavaScript 库的文章。<a href="https://medium.com/@kelin2025/writing-js-libraries-less-than-1tb-size-6342da0c006a" target="_blank" rel="external">Writing JS libraries less than 1TB size</a></p>
+<p>今天的问题：</p>
+<ul>
+<li>为什么在库里使用 bundlers（e.g webpack） 和 transpilers（e.g babel） 可能会导致问题。</li>
+<li>为什么我说不要使用 <cite>不要使用 imports/exports </cite>,你真的需要它吗？</li>
+</ul>
+<h5 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h5><p>我将从一个与文章主题不太相关，但很重要的问题开始 —— 为什么我们需要构建 Libraries 呢？</p>
+<p>如果我们使用<code>require</code>我们完全不需要构建库（因为我们阅读了前一篇文章并且不在库里使用 ES6,也没有必要使用 bundlers/transpilers 等工具）。</p>
+<p>当我们使用在 Nodejs 中仍然不支持的 ES6 modules 时，情况会有所变化。如我之前所说，你只能在 Node v9 并且带上 -experimental-modules 标志才能使用 ES6 modules。</p>
+<p>所以我们需要将我们代码中的的<code>imports/exports</code>替换成<code>require/module.exports</code>,我们需要工具来完成这个工作。</p>
+<h5 id="How-typical-developer-build-his-code"><a href="#How-typical-developer-build-his-code" class="headerlink" title="How typical developer build his code?"></a>How typical developer build his code?</h5><ul>
+<li>install rollup</li>
+<li>install babel, rollup plugins to locate modules, resolve’em, some another features</li>
+<li>build with <b>umd</b> format</li>
+<li>Oh, wait, why so large???</li>
+</ul>
+<h6 id="错误-1-using-umd-build"><a href="#错误-1-using-umd-build" class="headerlink" title="错误 1 - using umd build"></a>错误 1 - using <i>umd</i> build</h6><p>UMD（Unified Module Definition）意味着你可以在浏览器中使用<code>&lt;script&gt;</code>标签或者使用<code>require</code>来引用这个库。</p>
+<p>但是它并不是你想象的那么完美 — 它给你的库里加了额外的代码。</p>
+<p>假设我们一个 module （e.g EventBus），当我们要使用时：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> EventBus <span class="keyword">from</span> <span class="string">'../common/module'</span>;</div><div class="line"></div><div class="line"><span class="keyword">const</span> bus1 = <span class="keyword">new</span> EventBus();</div><div class="line"></div><div class="line">bus1.on(<span class="string">'hello'</span>, name =&gt; &#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'hello'</span>, name);</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> bus1;</div></pre></td></tr></table></figure>
+<p>假设我们需要在 Node.js app 里使用，先使用 rollup 来进行 UMD 构建。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> [</div><div class="line">  &#123;</div><div class="line">    <span class="attr">input</span>: <span class="string">'good/a.js'</span>,</div><div class="line">    <span class="attr">ouput</span>: &#123;</div><div class="line">      <span class="attr">name</span>: <span class="string">'goodA'</span>,</div><div class="line">      <span class="attr">file</span>: <span class="string">'bad/a.js'</span>,</div><div class="line">      <span class="attr">format</span>: <span class="string">'umd'</span></div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">];</div></pre></td></tr></table></figure>
+<p>然后我们可以看到构建出来的代码：</p>
+<a id="more"></a>
+<p><img src="https://cdn-images-1.medium.com/max/1091/1*BiQnoHPtWLrJvaL_sYPEfQ.png" alt=""></p>
+<p>有两样东西是我们不希望在 nano-library 里看到的。</p>
+<ul>
+<li>红框部分： 无用的代码。 在 Node.js 里你可以直接使用<code>require</code>,在可加载的<code>&lt;script&gt;</code>标签里可以直接传给<code>window</code>。</li>
+<li>蓝框部分： 因为 <b>UMD</b> 构建需要在浏览器中也能使用，所以它会把所有的依赖都都打包到一个 bundle 里，而不能像源码里<code>const EventBus = require(&#39;eventbus&#39;)</code>这样使用。</li>
+</ul>
+<p><b>UMD</b> 看起来很好，但是对于简单的 nano-libraries 显然不适用。</p>
+<p><strong> <i>解决方案：</i> </strong><cite> <b> 创建独立的 IIFE（立即执行函数）和 CJS 构建， 来代替 UMD </b></cite></p>
+<p>IIFE 构建非常的简洁，也不会包含任何不必要的代码。你可以直接 uglify 下面的代码，它会小很多。</p>
+<p><img src="https://cdn-images-1.medium.com/max/1091/1*bjShgqDufMIOHEHGVn1r1g.png" alt=""></p>
+<p><b>CJS</b> 构建也 OK，但是我们仍然会有上面蓝框部分的问题。</p>
+<p><img src="https://cdn-images-1.medium.com/max/1091/1*sqGn13y9H45emTBFlQ-Lvw.png" alt=""></p>
+<p>为什么这样不好呢？ 我下面会解释。</p>
+<h6 id="错误-2-—-resolving-dependencies-in-CJS-build"><a href="#错误-2-—-resolving-dependencies-in-CJS-build" class="headerlink" title="错误 2  —  resolving dependencies in CJS build"></a>错误 2  —  resolving dependencies in CJS build</h6><p>在你自己的库里放入依赖模块的源码是没有必要的。</p>
+<p>你完全可以在你自己的代码里使用<code>require</code>和<code>import</code>,把使用的外部依赖模块添加到 <i>package.json</i> 里的<code>dependencies</code>就可以了。</p>
+<p>然而，当里构建你的库（build your library）时，到底发生了什么呢？</p>
+<p>假设我们自己的库里<i> 2 个独立的 js 文件（或者 2 个不同的库） </i>有相同的依赖模块。</p>
+<p>将之前的 js 文件复制一份：<br><img src="https://cdn-images-1.medium.com/max/1091/1*uNUuKqzcNTEfz25pPi4yrQ.png" alt=""></p>
+<p>然后，开始构建：<br><img src="https://cdn-images-1.medium.com/max/1091/1*PojcjHSNYocgkxtONs-QQQ.png" alt=""></p>
+<p>最后我们得到两个 bundles，并且两个都包含了 EventBus 这个库。<br><img src="https://cdn-images-1.medium.com/max/1091/1*YeF-ypWdhgkVH4Z69F4gwQ.png" alt=""></p>
+<p>你猜在应用程序中他们会<i> 合并 </i>到一起吗？ 我们来验证一下，先创建一个 js 文件分别把这两个模块引入进来：<br><img src="https://cdn-images-1.medium.com/max/1091/1*zsFW1G2SPe2YwnThQ1uXeg.png" alt=""></p>
+<p>构建：<br><img src="https://cdn-images-1.medium.com/max/1091/1*gN7HabTjSyCPKaKi-iaw_w.png" alt=""></p>
+<p>结果：<br><img src="https://cdn-images-1.medium.com/max/1091/1*iFiPmUZTpTUOyuodU8paOw.png" alt=""></p>
+<p>然后我们就发现我们的 bundle 里有两个一模一样的<code>EventBus</code>。</p>
+<p><strong>注：</strong> 如果你认为这是 <b>CJS</b> 引起的，你可以改用 ES output 再重新验证下。</p>
+<p>现在，让我们试着在 <b>先不解决依赖关系</b> 的情况下构建我们的文件。我将把导入模块替换成我们的非内置（no-builded）变量。</p>
+<p>结果：<br><img src="https://cdn-images-1.medium.com/max/1091/1*yRSXSLFeKFqFqa5dgLqR9g.png" alt=""></p>
+<p>很不错，我们已经没有重复的代码了！ 为什么？ 因为 rollup 已经聪明到不会把我们相同的代码复制 2 遍了。 我们在代码中看到了相同的 imports 或者 requires，但没有必要为每个 import/require 来粘贴一遍代码。</p>
+<p><strong>注 1：</strong> 它也会影响到内部的库文件，避免解析相似的内部库文件，因为也会有重复。（TODO）<br><strong>注 2：</strong> 如果你有“当两个库依赖同一个库的两个不同 version 怎么办？”的疑问，参见：<a href="https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/" target="_blank" rel="external">how NPM solved versions conflicts</a></p>
+<p><strong> <i>可能的解决方案：</i> </strong></p>
+<h6 id="不要使用-imports"><a href="#不要使用-imports" class="headerlink" title="不要使用 imports"></a>不要使用 imports</h6><p>如里没有这个必要，可以使用<code>require</code>， 并且库里原样展示。</p>
+<h6 id="把依赖库放到-external-里"><a href="#把依赖库放到-external-里" class="headerlink" title="把依赖库放到 external 里"></a>把依赖库放到 external 里</h6><p>rollup 可以将依赖性标记为<code>external</code>。这意味着你的依赖项不会被打包，rollup 会原样保留代码里的<code>import</code>和<code>require</code>。</p>
+<p><img src="https://cdn-images-1.medium.com/max/1091/1*HT-OXqrWImhT0iUtSQJZWA.png" alt=""></p>
+<p>但是这样的话，你就得手动地把每一个 import 的模块添加到 external 中，如果你有很多这样的模块的话也会比较麻烦。</p>
+<p><img src="https://cdn-images-1.medium.com/max/1091/1*oMQcbT3142PwzCQLG_DR4w.png" alt=""></p>
+<p><b>小技巧：</b> 如果你想把所有依赖的模块都添加到 external 里话，你可以直接从 package.json 里取。</p>
+<p><img src="https://cdn-images-1.medium.com/max/1091/1*v5pVi1MG78_jHHfm_IC9DQ.png" alt=""></p>
+<p>这个时候我们再看一下我们的 bundle :</p>
+<p><img src="https://cdn-images-1.medium.com/max/1091/1*o6rFCDXYGKcXS00-O3-soQ.png" alt=""></p>
+<p>差不多 OK 了，但我们的代码里还有<i> interop </i>, 什么是<i> interop </i>，最好先读下面的解释而不是我的文字。<br>!()[<a href="https://cdn-images-1.medium.com/max/1091/1*R-zhqK3C2imuWOVDvBk_OQ.png" target="_blank" rel="external">https://cdn-images-1.medium.com/max/1091/1*R-zhqK3C2imuWOVDvBk_OQ.png</a>]</p>
+<p>因此我们禁掉它。<br><img src="https://cdn-images-1.medium.com/max/1091/1*f6wtoDlhacATYx4SmgLCvA.png" alt=""></p>
+<p>接下来，看起来 OK 了。<br><img src="https://cdn-images-1.medium.com/max/1091/1*9b4RnQNMB4a65F_wh9rZKA.png" alt=""></p>
+<p><strong>Note:</strong> 同时你要留意 path 的使用，如果你在你的 imports 中使用绝对路径，然后改变文档结构就会报错。</p>
+<p><strong> <i>可替代的解决方案：</i> </strong></p>
+<p>如果你还在看这篇文章的话，你也可以使用 babel 来代替 rollup， 它会替换掉你的<code>import</code>/<code>export</code>，用类 CJS 格式取而代之。</p>
+<p>与 rollup 不同的是，babel 不需要你把的每个文件和每个依赖库添加到配置文件中去。它所做的仅仅是从<i> folder1 </i>中取出文件，再把结果存储到<i> folder2 </i>中。</p>
+<p>有一个官方的插件<code>babel-plugin-transform-es2015-modules-common-js</code></p>
+<p>创建一个<code>.babelrc</code></p>
+<p><img src="https://cdn-images-1.medium.com/max/1091/1*tY-zmrtlJrIXGgwxSxrEiQ.png" alt=""></p>
+<p>然后编译你所有的源文件：</p>
+<p><img src="https://cdn-images-1.medium.com/max/1091/1*-F_R5JXhzTQh5Op4GFvUdQ.png" alt=""></p>
+<p>输出的内容不是很友好，但我们至少已经有<code>require</code>而不是源码了。</p>
+<p><img src="https://cdn-images-1.medium.com/max/1364/1*IbDj3VZWUJdtnRTvTSqUPg.png" alt=""></p>
+<p>两周前，我找到了更好的解决方案，可以去掉所有不必要的代码。就是<code>babel-plugin-transform-es2015-modules-simple-commonjs</code>。（跟之前那个插件差不多，加了 simple）</p>
+<p>替换一下我们的<code>.babelrc</code></p>
+<p><img src="https://cdn-images-1.medium.com/max/1091/1*N7C2_3BuQiwdJSaAWAMP1A.png" alt=""></p>
+<p>然后结果如下：</p>
+<p><img src="https://cdn-images-1.medium.com/max/1091/1*EW6fMig6LiVywmWH56jKww.png" alt=""></p>
+<p><strong>注：</strong> 最后那个 plugin 有些要注意的地方：</p>
+<p><img src="https://cdn-images-1.medium.com/max/1091/1*XZlb7agZmg4F11aEFuHeHg.png" alt=""></p>
+<p>但我觉得这个问题不大，有个印象就行了。</p>
+<p>最后的问题是：</p>
+<h6 id="Do-I-really-need-ES6-modules"><a href="#Do-I-really-need-ES6-modules" class="headerlink" title="Do I really need ES6 modules?"></a>Do I really need ES6 modules?</h6><p>我已经做了很多工作，阅读了很多文章来进行最后的修改。我认为在很多情况下使用 ES6 modules 的优点比我做的工作要少得多。</p>
+<p>我不会写更好的<i> <a href="https://en.wikipedia.org/wiki/Dead_code_elimination" target="_blank" rel="external">dead-code-elimination</a> </i>, 因为：</p>
+<ol>
+<li>这是一个明显的事实。</li>
+<li>在 nano-libraries 的 context 中，你可能不需要使用 tree-shaking 和 导出若干个变量。</li>
+</ol>
+<p>Webpack 封装了每个模块和它的<code>require</code>函数。但随着<code>ModuleConcatenationPlugin</code>为 ES6 模块提供了更多的优化。你可以在<a href="https://webpack.js.org/plugins/module-concatenation-plugin/" target="_blank" rel="external">官方文件</a>中读到更多。</p>
+<p>你可能已经厌倦了文字，所以我将放一个截图：</p>
+<p><img src="https://cdn-images-1.medium.com/max/1364/1*60nC4mLFP4_dgEnUQMZH-w.png" alt=""></p>
+<p>如您所见，<i>nanoclone</i> 与 index.js 连接在一起成为一个模块（因为它在 package.json 中有 ES module entry），它为我们节省了一些字节。</p>
+<p>此外，Mateusz burzyski 创建了一个<a href="https://github.com/Andarist/nanoclone-comparisons" target="_blank" rel="external">repository</a>, 利用 webpack hoisting，演示了分别用 <b> CJS </b> 和 <b> ES </b> 构建<i>nanoclone bundles</i>的差异。</p>
+<p><img src="https://cdn-images-1.medium.com/max/1091/1*rEhrOtRlv6bYNRLZHoR5qA.png" alt=""></p>
+<h6 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h6><p>我认为，只有当这个库主要是针对前端使用的，使用 ES6 modules 才有意义， 如果这个库主要是后端使用，不要做不必要的工作。所以：</p>
+<ul>
+<li>当你的库只会在 Node.js 里使用时：</li>
+</ul>
+<p>使用<code>require</code>，而不要使用 ES6 modules.</p>
+<p>如果你想减小 size，你可以把你的库拆分成几个文件，把<code>optional parts</code>, <code>utils</code>和其它部分移出核心库。</p>
+<ul>
+<li>当你的库只在 modern fronted 使用时：</li>
+</ul>
+<p>使用 ES 6 modules, 不用担心，不用构建， Webpack 为替你处理。</p>
+<p>只要保证所有依赖的外部库都已经添加到<i> package.json </i>。</p>
+<ul>
+<li>当你的库需要跨环境使用时：</li>
+</ul>
+<ol>
+<li><p><em>对于 modern fronted:</em> 用 ES6 modules 写库。</p>
+</li>
+<li><p><em>对于 Node.js:</em> 按照我的介绍，配置 rollup，或者使用 babel 配合 babel-plugin-transform-es2015-modules-common-js 来将 import/export 转换为 require/module.exports。</p>
+</li>
+<li><p><em>对于 browsers:</em> 使用 rollup 创建 IIFE 构建，以及：</p>
+</li>
+</ol>
+<ul>
+<li><p>在这里，您还应该添加<a href="https://github.com/TrySound/rollup-plugin-uglify" target="_blank" rel="external">rollup-plugin-uglify</a>来压缩您的包。</p>
+</li>
+<li><p>另外，您可能需要<a href="https://github.com/rollup/rollup-plugin-commonjs" target="_blank" rel="external">rollup-plugin-commonjs</a>将 CJS 模块转换为 ES6 imports（ rollup 需要这个插件来 import CJS 模块）。</p>
+</li>
+<li><p>同时，你可能需要<a href="https://github.com/rollup/rollup-plugin-node-resolve" target="_blank" rel="external">rollup-plugin-node-resolve</a>来解析外部依赖模块。</p>
+</li>
+<li><p>同时，你的 <i> package.json </i> 应该要包含以下字段：</p>
+<ul>
+<li>module: 使用 ES6 modules 的对象路径。</li>
+<li>main: <b> CJS </b>构建的路径</li>
+</ul>
+</li>
+</ul>
+<p>别忘了添加 <code>README.md</code> 链接到你的库所在 CDN(例如<a href="https://unpkg.com/nanotween@0.7.0" target="_blank" rel="external">https://unpkg.com/nanotween@0.7.0</a> dist / index.js)。</p>
+<p>P.S. 你不需要上传你的库，只需要使用 <code>npm publish</code>， 它就可以在 <code>unpkg</code> 使用了。</p>
+<p>我希望这篇文章对你而言有趣并且有帮助。感谢你的阅读:)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;注： 翻译自&lt;a href=&quot;https://medium.com/@kelin2025/so-you-wanna-use-es6-modules-714f48b3a953&quot;&gt;How to write and build JS libraries in 2018&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在开始之前，我建议您阅读我以前的一篇关于创建极小 size 的 JavaScript 库的文章。&lt;a href=&quot;https://medium.com/@kelin2025/writing-js-libraries-less-than-1tb-size-6342da0c006a&quot;&gt;Writing JS libraries less than 1TB size&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今天的问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为什么在库里使用 bundlers（e.g webpack） 和 transpilers（e.g babel） 可能会导致问题。&lt;/li&gt;
+&lt;li&gt;为什么我说不要使用 &lt;cite&gt;不要使用 imports/exports &lt;/cite&gt;,你真的需要它吗？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h5&gt;&lt;p&gt;我将从一个与文章主题不太相关，但很重要的问题开始 —— 为什么我们需要构建 Libraries 呢？&lt;/p&gt;
+&lt;p&gt;如果我们使用&lt;code&gt;require&lt;/code&gt;我们完全不需要构建库（因为我们阅读了前一篇文章并且不在库里使用 ES6,也没有必要使用 bundlers/transpilers 等工具）。&lt;/p&gt;
+&lt;p&gt;当我们使用在 Nodejs 中仍然不支持的 ES6 modules 时，情况会有所变化。如我之前所说，你只能在 Node v9 并且带上 -experimental-modules 标志才能使用 ES6 modules。&lt;/p&gt;
+&lt;p&gt;所以我们需要将我们代码中的的&lt;code&gt;imports/exports&lt;/code&gt;替换成&lt;code&gt;require/module.exports&lt;/code&gt;,我们需要工具来完成这个工作。&lt;/p&gt;
+&lt;h5 id=&quot;How-typical-developer-build-his-code&quot;&gt;&lt;a href=&quot;#How-typical-developer-build-his-code&quot; class=&quot;headerlink&quot; title=&quot;How typical developer build his code?&quot;&gt;&lt;/a&gt;How typical developer build his code?&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;install rollup&lt;/li&gt;
+&lt;li&gt;install babel, rollup plugins to locate modules, resolve’em, some another features&lt;/li&gt;
+&lt;li&gt;build with &lt;b&gt;umd&lt;/b&gt; format&lt;/li&gt;
+&lt;li&gt;Oh, wait, why so large???&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&quot;错误-1-using-umd-build&quot;&gt;&lt;a href=&quot;#错误-1-using-umd-build&quot; class=&quot;headerlink&quot; title=&quot;错误 1 - using umd build&quot;&gt;&lt;/a&gt;错误 1 - using &lt;i&gt;umd&lt;/i&gt; build&lt;/h6&gt;&lt;p&gt;UMD（Unified Module Definition）意味着你可以在浏览器中使用&lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;标签或者使用&lt;code&gt;require&lt;/code&gt;来引用这个库。&lt;/p&gt;
+&lt;p&gt;但是它并不是你想象的那么完美 — 它给你的库里加了额外的代码。&lt;/p&gt;
+&lt;p&gt;假设我们一个 module （e.g EventBus），当我们要使用时：&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; EventBus &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;../common/module&#39;&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; bus1 = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; EventBus();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;bus1.on(&lt;span class=&quot;string&quot;&gt;&#39;hello&#39;&lt;/span&gt;, name =&amp;gt; &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;hello&#39;&lt;/span&gt;, name);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;default&lt;/span&gt; bus1;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;假设我们需要在 Node.js app 里使用，先使用 rollup 来进行 UMD 构建。&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;default&lt;/span&gt; [&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;attr&quot;&gt;input&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&#39;good/a.js&#39;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;attr&quot;&gt;ouput&lt;/span&gt;: &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;      &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&#39;goodA&#39;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;      &lt;span class=&quot;attr&quot;&gt;file&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&#39;bad/a.js&#39;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;      &lt;span class=&quot;attr&quot;&gt;format&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&#39;umd&#39;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;];&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后我们可以看到构建出来的代码：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+      <category term="library" scheme="http://yoursite.com/tags/library/"/>
+    
+      <category term="rollup" scheme="http://yoursite.com/tags/rollup/"/>
+    
+  </entry>
+  
+  <entry>
     <title>在 js 中创建一个简单的 EventBus</title>
     <link href="http://yoursite.com/2018-a/03/17/EventBus/"/>
     <id>http://yoursite.com/2018-a/03/17/EventBus/</id>
     <published>2018-03-17T09:31:29.000Z</published>
-    <updated>2018-03-17T14:50:12.502Z</updated>
+    <updated>2018-03-17T17:56:37.630Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li>注： 翻译自<a href="https://medium.com/@soffritti.pierfrancesco/create-a-simple-event-bus-in-javascript-8aa0370b3969" target="_blank" rel="external">EventBus</a></li>

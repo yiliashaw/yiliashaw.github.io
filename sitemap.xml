@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018-a/03/18/how-to-write-js-libraries/</loc>
+    
+    <lastmod>2018-03-18T08:31:50.815Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018-a/03/17/EventBus/</loc>
     
-    <lastmod>2018-03-17T14:50:12.502Z</lastmod>
+    <lastmod>2018-03-17T17:56:37.630Z</lastmod>
     
   </url>
   
@@ -114,14 +121,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2013-a/12/25/gallery-post/</loc>
+    <loc>http://yoursite.com/2013-a/12/25/excerpts/</loc>
     
     <lastmod>2017-04-18T15:40:50.989Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2013-a/12/25/excerpts/</loc>
+    <loc>http://yoursite.com/2013-a/12/25/gallery-post/</loc>
     
     <lastmod>2017-04-18T15:40:50.989Z</lastmod>
     

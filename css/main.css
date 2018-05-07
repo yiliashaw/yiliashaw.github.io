@@ -155,7 +155,8 @@ a img {
 /*-----------------------------------------------------------------------------------*/
 
 body {
-  font-family: "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti;
+  /* font-family: "Trebuchet MS", monospace, 'Microsoft YaHei', STHeiti; */
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,'PingFang SC','Microsoft YaHei','Source Han Sans SC','Noto Sans CJK SC','WenQuanYi Micro Hei',sans-serif;
   color: #333;
   font-size: 14px;
   background-color: #f2f2f2;
@@ -476,7 +477,8 @@ h1.prince-log a {
 }
 
 .post-title {
-  font-family: "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif;
+  /* font-family: "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,'PingFang SC','Microsoft YaHei','Source Han Sans SC','Noto Sans CJK SC','WenQuanYi Micro Hei',sans-serif;
   margin-bottom: 25px;
   margin-top: 20px;
   text-align: center;
@@ -488,7 +490,8 @@ h1.prince-log a {
 }
 
 .post-title a {
-  font-family: "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif;
+  /* font-family: "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,'PingFang SC','Microsoft YaHei','Source Han Sans SC','Noto Sans CJK SC','WenQuanYi Micro Hei',sans-serif;
   color: #000;
 }
 
@@ -563,15 +566,16 @@ h1.prince-log a {
 }
 
 .post-entry p,
-.post-entry h1,
+/* .post-entry h1,
 .post-entry h2,
 .post-entry h3,
 .post-entry h4,
 .post-entry h5,
-.post-entry h6,
+.post-entry h6, */
 .post-entry hr {
   margin-bottom: 20px;
-  font-family: "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif;
+  /* font-family: "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeitiArial, sans-serif; */
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,'PingFang SC','Microsoft YaHei','Source Han Sans SC','Noto Sans CJK SC','WenQuanYi Micro Hei',sans-serif;
 }
 
 .post-entry h1,
@@ -790,7 +794,7 @@ blockquote {
 
 .post-entry pre,
 .post-entry code {
-  font-family: consolas, Menlo, "Georgia", "PingFang SC", "Microsoft YaHei", monospace;
+  font-family: Monaco, consolas, Menlo, "Georgia", "PingFang SC", "Microsoft YaHei", monospace;
 }
 
 .gutter {
@@ -994,7 +998,8 @@ aside.sidebar {
 }
 
 .post-item a .post-title {
-  font-family: "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif;
+  /* font-family: "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,'PingFang SC','Microsoft YaHei','Source Han Sans SC','Noto Sans CJK SC','WenQuanYi Micro Hei',sans-serif;
   text-align: left;
   margin: 0px;
   font-weight: 400;
@@ -1011,7 +1016,8 @@ aside.sidebar {
     margin: 8px 0;
   }
   .post-item a .post-title {
-    font-family: "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif;
+    /* font-family: "Trebuchet MS", Helvetica Neue, Helvetica, 'Microsoft YaHei', STHeiti, Arial, sans-serif; */
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,'PingFang SC','Microsoft YaHei','Source Han Sans SC','Noto Sans CJK SC','WenQuanYi Micro Hei',sans-serif;
     height: 18px;
     line-height: 18px;
     padding-left: 0px;
@@ -1216,6 +1222,16 @@ h3.aside-title {
   padding-right: 4px;
 }
 
+/*--------------------------------------------------------------*/
+
+
+/*  COMMENT
+/*--------------------------------------------------------------*/
+#comment {
+  width: 85%;
+  margin: 0 auto;
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,'PingFang SC','Microsoft YaHei','Source Han Sans SC','Noto Sans CJK SC','WenQuanYi Micro Hei',sans-serif;
+}
 
 /*--------------------------------------------------------------------------------*/
 
@@ -1228,6 +1244,7 @@ h3.aside-title {
   margin-top: 50px;
   font-size: 18px;
 }
+
 
 
 /*--------------------------------------------------------------*/

@@ -5,7 +5,7 @@ function init() {
 
   $('.post-block p img').each(function () {
     $(this).wrap('<a data-fancybox="images" href="' + this.src + '" data-caption=" ' + this.alt + '" class="fancybox"></a>');
-    $(this).attr('src', this.src+'?imageMogr2/thumbnail/300x300/gravity/North/crop/200x200');
+    // $(this).attr('src', 'thumbnail.jpg');
   });
 
   if ($.fancybox) {
@@ -20,7 +20,7 @@ function init() {
           caption = $(this).data('caption');
           link = '<a href="' + item.src + '">Download</a>';
 
-          return (caption ? caption : '') + link;
+          return (caption ? caption + '<br />' : '') + link;
         }
       },
 
